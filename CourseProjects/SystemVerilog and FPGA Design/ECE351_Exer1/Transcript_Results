@@ -1,0 +1,1062 @@
+couldn't open "transcript": permission denied
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2020.3 win64 Jul 12 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project Carry_Adder
+# Compile of adder_4bits.sv was successful.
+# Compile of dut.sv was successful.
+# Compile of fa.sv was successful.
+# Compile of tb_rca_8bits.released.sv was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_rca_8bits
+# vsim -voptargs="+acc" work.tb_rca_8bits 
+# Start time: 11:38:19 on Apr 09,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb_rca_8bits(fast)
+# Loading work.dut(fast)
+# Loading work.adder_4bits(fast)
+# Loading work.fa(fast)
+log -r *
+run -all
+# Test some cases with carry in = 0
+#                    0		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                    1		A:  0	B: 16	Cin:0		Sum: 16	Cout:0
+#                  101		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  102		A:  0	B: 17	Cin:0		Sum: 17	Cout:0
+#                  202		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  203		A:  0	B: 18	Cin:0		Sum: 18	Cout:0
+#                  303		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  304		A:  0	B: 19	Cin:0		Sum: 19	Cout:0
+#                  404		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  405		A:  0	B: 20	Cin:0		Sum: 20	Cout:0
+#                  505		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  506		A:  0	B: 21	Cin:0		Sum: 21	Cout:0
+#                  606		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  607		A:  0	B: 22	Cin:0		Sum: 22	Cout:0
+#                  707		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  708		A:  0	B: 23	Cin:0		Sum: 23	Cout:0
+#                  808		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  809		A:  0	B: 24	Cin:0		Sum: 24	Cout:0
+#                  909		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                  910		A:  0	B: 25	Cin:0		Sum: 25	Cout:0
+#                 1010		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1011		A:  0	B: 26	Cin:0		Sum: 26	Cout:0
+#                 1111		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1112		A:  0	B: 27	Cin:0		Sum: 27	Cout:0
+#                 1212		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1213		A:  0	B: 28	Cin:0		Sum: 28	Cout:0
+#                 1313		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1314		A:  0	B: 29	Cin:0		Sum: 29	Cout:0
+#                 1414		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1415		A:  0	B: 30	Cin:0		Sum: 30	Cout:0
+#                 1515		A:  0	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1516		A:  0	B: 31	Cin:0		Sum: 31	Cout:0
+#                 1616		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1617		A:  1	B: 16	Cin:0		Sum: 17	Cout:0
+#                 1717		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1718		A:  1	B: 17	Cin:0		Sum: 18	Cout:0
+#                 1818		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1819		A:  1	B: 18	Cin:0		Sum: 19	Cout:0
+#                 1919		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 1920		A:  1	B: 19	Cin:0		Sum: 20	Cout:0
+#                 2020		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2021		A:  1	B: 20	Cin:0		Sum: 21	Cout:0
+#                 2121		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2122		A:  1	B: 21	Cin:0		Sum: 22	Cout:0
+#                 2222		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2223		A:  1	B: 22	Cin:0		Sum: 23	Cout:0
+#                 2323		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2324		A:  1	B: 23	Cin:0		Sum: 24	Cout:0
+#                 2424		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2425		A:  1	B: 24	Cin:0		Sum: 25	Cout:0
+#                 2525		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2526		A:  1	B: 25	Cin:0		Sum: 26	Cout:0
+#                 2626		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2627		A:  1	B: 26	Cin:0		Sum: 27	Cout:0
+#                 2727		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2728		A:  1	B: 27	Cin:0		Sum: 28	Cout:0
+#                 2828		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2829		A:  1	B: 28	Cin:0		Sum: 29	Cout:0
+#                 2929		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 2930		A:  1	B: 29	Cin:0		Sum: 30	Cout:0
+#                 3030		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3031		A:  1	B: 30	Cin:0		Sum: 31	Cout:0
+#                 3131		A:  1	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3132		A:  1	B: 31	Cin:0		Sum: 32	Cout:0
+#                 3232		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3233		A:  2	B: 16	Cin:0		Sum: 18	Cout:0
+#                 3333		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3334		A:  2	B: 17	Cin:0		Sum: 19	Cout:0
+#                 3434		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3435		A:  2	B: 18	Cin:0		Sum: 20	Cout:0
+#                 3535		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3536		A:  2	B: 19	Cin:0		Sum: 21	Cout:0
+#                 3636		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3637		A:  2	B: 20	Cin:0		Sum: 22	Cout:0
+#                 3737		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3738		A:  2	B: 21	Cin:0		Sum: 23	Cout:0
+#                 3838		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3839		A:  2	B: 22	Cin:0		Sum: 24	Cout:0
+#                 3939		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 3940		A:  2	B: 23	Cin:0		Sum: 25	Cout:0
+#                 4040		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4041		A:  2	B: 24	Cin:0		Sum: 26	Cout:0
+#                 4141		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4142		A:  2	B: 25	Cin:0		Sum: 27	Cout:0
+#                 4242		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4243		A:  2	B: 26	Cin:0		Sum: 28	Cout:0
+#                 4343		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4344		A:  2	B: 27	Cin:0		Sum: 29	Cout:0
+#                 4444		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4445		A:  2	B: 28	Cin:0		Sum: 30	Cout:0
+#                 4545		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4546		A:  2	B: 29	Cin:0		Sum: 31	Cout:0
+#                 4646		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4647		A:  2	B: 30	Cin:0		Sum: 32	Cout:0
+#                 4747		A:  2	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4748		A:  2	B: 31	Cin:0		Sum: 33	Cout:0
+#                 4848		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4849		A:  3	B: 16	Cin:0		Sum: 19	Cout:0
+#                 4949		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 4950		A:  3	B: 17	Cin:0		Sum: 20	Cout:0
+#                 5050		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5051		A:  3	B: 18	Cin:0		Sum: 21	Cout:0
+#                 5151		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5152		A:  3	B: 19	Cin:0		Sum: 22	Cout:0
+#                 5252		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5253		A:  3	B: 20	Cin:0		Sum: 23	Cout:0
+#                 5353		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5354		A:  3	B: 21	Cin:0		Sum: 24	Cout:0
+#                 5454		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5455		A:  3	B: 22	Cin:0		Sum: 25	Cout:0
+#                 5555		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5556		A:  3	B: 23	Cin:0		Sum: 26	Cout:0
+#                 5656		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5657		A:  3	B: 24	Cin:0		Sum: 27	Cout:0
+#                 5757		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5758		A:  3	B: 25	Cin:0		Sum: 28	Cout:0
+#                 5858		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5859		A:  3	B: 26	Cin:0		Sum: 29	Cout:0
+#                 5959		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 5960		A:  3	B: 27	Cin:0		Sum: 30	Cout:0
+#                 6060		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6061		A:  3	B: 28	Cin:0		Sum: 31	Cout:0
+#                 6161		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6162		A:  3	B: 29	Cin:0		Sum: 32	Cout:0
+#                 6262		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6263		A:  3	B: 30	Cin:0		Sum: 33	Cout:0
+#                 6363		A:  3	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6364		A:  3	B: 31	Cin:0		Sum: 34	Cout:0
+#                 6464		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6465		A:  4	B: 16	Cin:0		Sum: 20	Cout:0
+#                 6565		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6566		A:  4	B: 17	Cin:0		Sum: 21	Cout:0
+#                 6666		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6667		A:  4	B: 18	Cin:0		Sum: 22	Cout:0
+#                 6767		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6768		A:  4	B: 19	Cin:0		Sum: 23	Cout:0
+#                 6868		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6869		A:  4	B: 20	Cin:0		Sum: 24	Cout:0
+#                 6969		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 6970		A:  4	B: 21	Cin:0		Sum: 25	Cout:0
+#                 7070		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7071		A:  4	B: 22	Cin:0		Sum: 26	Cout:0
+#                 7171		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7172		A:  4	B: 23	Cin:0		Sum: 27	Cout:0
+#                 7272		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7273		A:  4	B: 24	Cin:0		Sum: 28	Cout:0
+#                 7373		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7374		A:  4	B: 25	Cin:0		Sum: 29	Cout:0
+#                 7474		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7475		A:  4	B: 26	Cin:0		Sum: 30	Cout:0
+#                 7575		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7576		A:  4	B: 27	Cin:0		Sum: 31	Cout:0
+#                 7676		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7677		A:  4	B: 28	Cin:0		Sum: 32	Cout:0
+#                 7777		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7778		A:  4	B: 29	Cin:0		Sum: 33	Cout:0
+#                 7878		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7879		A:  4	B: 30	Cin:0		Sum: 34	Cout:0
+#                 7979		A:  4	B:  x	Cin:x		Sum:  x	Cout:x
+#                 7980		A:  4	B: 31	Cin:0		Sum: 35	Cout:0
+#                 8080		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8081		A:  5	B: 16	Cin:0		Sum: 21	Cout:0
+#                 8181		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8182		A:  5	B: 17	Cin:0		Sum: 22	Cout:0
+#                 8282		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8283		A:  5	B: 18	Cin:0		Sum: 23	Cout:0
+#                 8383		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8384		A:  5	B: 19	Cin:0		Sum: 24	Cout:0
+#                 8484		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8485		A:  5	B: 20	Cin:0		Sum: 25	Cout:0
+#                 8585		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8586		A:  5	B: 21	Cin:0		Sum: 26	Cout:0
+#                 8686		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8687		A:  5	B: 22	Cin:0		Sum: 27	Cout:0
+#                 8787		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8788		A:  5	B: 23	Cin:0		Sum: 28	Cout:0
+#                 8888		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8889		A:  5	B: 24	Cin:0		Sum: 29	Cout:0
+#                 8989		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 8990		A:  5	B: 25	Cin:0		Sum: 30	Cout:0
+#                 9090		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9091		A:  5	B: 26	Cin:0		Sum: 31	Cout:0
+#                 9191		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9192		A:  5	B: 27	Cin:0		Sum: 32	Cout:0
+#                 9292		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9293		A:  5	B: 28	Cin:0		Sum: 33	Cout:0
+#                 9393		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9394		A:  5	B: 29	Cin:0		Sum: 34	Cout:0
+#                 9494		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9495		A:  5	B: 30	Cin:0		Sum: 35	Cout:0
+#                 9595		A:  5	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9596		A:  5	B: 31	Cin:0		Sum: 36	Cout:0
+#                 9696		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9697		A:  6	B: 16	Cin:0		Sum: 22	Cout:0
+#                 9797		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9798		A:  6	B: 17	Cin:0		Sum: 23	Cout:0
+#                 9898		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                 9899		A:  6	B: 18	Cin:0		Sum: 24	Cout:0
+#                 9999		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10000		A:  6	B: 19	Cin:0		Sum: 25	Cout:0
+#                10100		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10101		A:  6	B: 20	Cin:0		Sum: 26	Cout:0
+#                10201		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10202		A:  6	B: 21	Cin:0		Sum: 27	Cout:0
+#                10302		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10303		A:  6	B: 22	Cin:0		Sum: 28	Cout:0
+#                10403		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10404		A:  6	B: 23	Cin:0		Sum: 29	Cout:0
+#                10504		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10505		A:  6	B: 24	Cin:0		Sum: 30	Cout:0
+#                10605		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10606		A:  6	B: 25	Cin:0		Sum: 31	Cout:0
+#                10706		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10707		A:  6	B: 26	Cin:0		Sum: 32	Cout:0
+#                10807		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10808		A:  6	B: 27	Cin:0		Sum: 33	Cout:0
+#                10908		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                10909		A:  6	B: 28	Cin:0		Sum: 34	Cout:0
+#                11009		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                11010		A:  6	B: 29	Cin:0		Sum: 35	Cout:0
+#                11110		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                11111		A:  6	B: 30	Cin:0		Sum: 36	Cout:0
+#                11211		A:  6	B:  x	Cin:x		Sum:  x	Cout:x
+#                11212		A:  6	B: 31	Cin:0		Sum: 37	Cout:0
+#                11312		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                11313		A:  7	B: 16	Cin:0		Sum: 23	Cout:0
+#                11413		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                11414		A:  7	B: 17	Cin:0		Sum: 24	Cout:0
+#                11514		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                11515		A:  7	B: 18	Cin:0		Sum: 25	Cout:0
+#                11615		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                11616		A:  7	B: 19	Cin:0		Sum: 26	Cout:0
+#                11716		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                11717		A:  7	B: 20	Cin:0		Sum: 27	Cout:0
+#                11817		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                11818		A:  7	B: 21	Cin:0		Sum: 28	Cout:0
+#                11918		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                11919		A:  7	B: 22	Cin:0		Sum: 29	Cout:0
+#                12019		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12020		A:  7	B: 23	Cin:0		Sum: 30	Cout:0
+#                12120		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12121		A:  7	B: 24	Cin:0		Sum: 31	Cout:0
+#                12221		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12222		A:  7	B: 25	Cin:0		Sum: 32	Cout:0
+#                12322		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12323		A:  7	B: 26	Cin:0		Sum: 33	Cout:0
+#                12423		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12424		A:  7	B: 27	Cin:0		Sum: 34	Cout:0
+#                12524		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12525		A:  7	B: 28	Cin:0		Sum: 35	Cout:0
+#                12625		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12626		A:  7	B: 29	Cin:0		Sum: 36	Cout:0
+#                12726		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12727		A:  7	B: 30	Cin:0		Sum: 37	Cout:0
+#                12827		A:  7	B:  x	Cin:x		Sum:  x	Cout:x
+#                12828		A:  7	B: 31	Cin:0		Sum: 38	Cout:0
+#                12928		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                12929		A:  8	B: 16	Cin:0		Sum: 24	Cout:0
+#                13029		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13030		A:  8	B: 17	Cin:0		Sum: 25	Cout:0
+#                13130		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13131		A:  8	B: 18	Cin:0		Sum: 26	Cout:0
+#                13231		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13232		A:  8	B: 19	Cin:0		Sum: 27	Cout:0
+#                13332		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13333		A:  8	B: 20	Cin:0		Sum: 28	Cout:0
+#                13433		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13434		A:  8	B: 21	Cin:0		Sum: 29	Cout:0
+#                13534		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13535		A:  8	B: 22	Cin:0		Sum: 30	Cout:0
+#                13635		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13636		A:  8	B: 23	Cin:0		Sum: 31	Cout:0
+#                13736		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13737		A:  8	B: 24	Cin:0		Sum: 32	Cout:0
+#                13837		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13838		A:  8	B: 25	Cin:0		Sum: 33	Cout:0
+#                13938		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                13939		A:  8	B: 26	Cin:0		Sum: 34	Cout:0
+#                14039		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                14040		A:  8	B: 27	Cin:0		Sum: 35	Cout:0
+#                14140		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                14141		A:  8	B: 28	Cin:0		Sum: 36	Cout:0
+#                14241		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                14242		A:  8	B: 29	Cin:0		Sum: 37	Cout:0
+#                14342		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                14343		A:  8	B: 30	Cin:0		Sum: 38	Cout:0
+#                14443		A:  8	B:  x	Cin:x		Sum:  x	Cout:x
+#                14444		A:  8	B: 31	Cin:0		Sum: 39	Cout:0
+#                14544		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                14545		A:  9	B: 16	Cin:0		Sum: 25	Cout:0
+#                14645		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                14646		A:  9	B: 17	Cin:0		Sum: 26	Cout:0
+#                14746		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                14747		A:  9	B: 18	Cin:0		Sum: 27	Cout:0
+#                14847		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                14848		A:  9	B: 19	Cin:0		Sum: 28	Cout:0
+#                14948		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                14949		A:  9	B: 20	Cin:0		Sum: 29	Cout:0
+#                15049		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15050		A:  9	B: 21	Cin:0		Sum: 30	Cout:0
+#                15150		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15151		A:  9	B: 22	Cin:0		Sum: 31	Cout:0
+#                15251		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15252		A:  9	B: 23	Cin:0		Sum: 32	Cout:0
+#                15352		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15353		A:  9	B: 24	Cin:0		Sum: 33	Cout:0
+#                15453		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15454		A:  9	B: 25	Cin:0		Sum: 34	Cout:0
+#                15554		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15555		A:  9	B: 26	Cin:0		Sum: 35	Cout:0
+#                15655		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15656		A:  9	B: 27	Cin:0		Sum: 36	Cout:0
+#                15756		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15757		A:  9	B: 28	Cin:0		Sum: 37	Cout:0
+#                15857		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15858		A:  9	B: 29	Cin:0		Sum: 38	Cout:0
+#                15958		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                15959		A:  9	B: 30	Cin:0		Sum: 39	Cout:0
+#                16059		A:  9	B:  x	Cin:x		Sum:  x	Cout:x
+#                16060		A:  9	B: 31	Cin:0		Sum: 40	Cout:0
+#                16160		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16161		A: 10	B: 16	Cin:0		Sum: 26	Cout:0
+#                16261		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16262		A: 10	B: 17	Cin:0		Sum: 27	Cout:0
+#                16362		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16363		A: 10	B: 18	Cin:0		Sum: 28	Cout:0
+#                16463		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16464		A: 10	B: 19	Cin:0		Sum: 29	Cout:0
+#                16564		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16565		A: 10	B: 20	Cin:0		Sum: 30	Cout:0
+#                16665		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16666		A: 10	B: 21	Cin:0		Sum: 31	Cout:0
+#                16766		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16767		A: 10	B: 22	Cin:0		Sum: 32	Cout:0
+#                16867		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16868		A: 10	B: 23	Cin:0		Sum: 33	Cout:0
+#                16968		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                16969		A: 10	B: 24	Cin:0		Sum: 34	Cout:0
+#                17069		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                17070		A: 10	B: 25	Cin:0		Sum: 35	Cout:0
+#                17170		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                17171		A: 10	B: 26	Cin:0		Sum: 36	Cout:0
+#                17271		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                17272		A: 10	B: 27	Cin:0		Sum: 37	Cout:0
+#                17372		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                17373		A: 10	B: 28	Cin:0		Sum: 38	Cout:0
+#                17473		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                17474		A: 10	B: 29	Cin:0		Sum: 39	Cout:0
+#                17574		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                17575		A: 10	B: 30	Cin:0		Sum: 40	Cout:0
+#                17675		A: 10	B:  x	Cin:x		Sum:  x	Cout:x
+#                17676		A: 10	B: 31	Cin:0		Sum: 41	Cout:0
+#                17776		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                17777		A: 11	B: 16	Cin:0		Sum: 27	Cout:0
+#                17877		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                17878		A: 11	B: 17	Cin:0		Sum: 28	Cout:0
+#                17978		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                17979		A: 11	B: 18	Cin:0		Sum: 29	Cout:0
+#                18079		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18080		A: 11	B: 19	Cin:0		Sum: 30	Cout:0
+#                18180		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18181		A: 11	B: 20	Cin:0		Sum: 31	Cout:0
+#                18281		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18282		A: 11	B: 21	Cin:0		Sum: 32	Cout:0
+#                18382		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18383		A: 11	B: 22	Cin:0		Sum: 33	Cout:0
+#                18483		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18484		A: 11	B: 23	Cin:0		Sum: 34	Cout:0
+#                18584		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18585		A: 11	B: 24	Cin:0		Sum: 35	Cout:0
+#                18685		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18686		A: 11	B: 25	Cin:0		Sum: 36	Cout:0
+#                18786		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18787		A: 11	B: 26	Cin:0		Sum: 37	Cout:0
+#                18887		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18888		A: 11	B: 27	Cin:0		Sum: 38	Cout:0
+#                18988		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                18989		A: 11	B: 28	Cin:0		Sum: 39	Cout:0
+#                19089		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                19090		A: 11	B: 29	Cin:0		Sum: 40	Cout:0
+#                19190		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                19191		A: 11	B: 30	Cin:0		Sum: 41	Cout:0
+#                19291		A: 11	B:  x	Cin:x		Sum:  x	Cout:x
+#                19292		A: 11	B: 31	Cin:0		Sum: 42	Cout:0
+#                19392		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                19393		A: 12	B: 16	Cin:0		Sum: 28	Cout:0
+#                19493		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                19494		A: 12	B: 17	Cin:0		Sum: 29	Cout:0
+#                19594		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                19595		A: 12	B: 18	Cin:0		Sum: 30	Cout:0
+#                19695		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                19696		A: 12	B: 19	Cin:0		Sum: 31	Cout:0
+#                19796		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                19797		A: 12	B: 20	Cin:0		Sum: 32	Cout:0
+#                19897		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                19898		A: 12	B: 21	Cin:0		Sum: 33	Cout:0
+#                19998		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                19999		A: 12	B: 22	Cin:0		Sum: 34	Cout:0
+#                20099		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20100		A: 12	B: 23	Cin:0		Sum: 35	Cout:0
+#                20200		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20201		A: 12	B: 24	Cin:0		Sum: 36	Cout:0
+#                20301		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20302		A: 12	B: 25	Cin:0		Sum: 37	Cout:0
+#                20402		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20403		A: 12	B: 26	Cin:0		Sum: 38	Cout:0
+#                20503		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20504		A: 12	B: 27	Cin:0		Sum: 39	Cout:0
+#                20604		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20605		A: 12	B: 28	Cin:0		Sum: 40	Cout:0
+#                20705		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20706		A: 12	B: 29	Cin:0		Sum: 41	Cout:0
+#                20806		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20807		A: 12	B: 30	Cin:0		Sum: 42	Cout:0
+#                20907		A: 12	B:  x	Cin:x		Sum:  x	Cout:x
+#                20908		A: 12	B: 31	Cin:0		Sum: 43	Cout:0
+#                21008		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21009		A: 13	B: 16	Cin:0		Sum: 29	Cout:0
+#                21109		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21110		A: 13	B: 17	Cin:0		Sum: 30	Cout:0
+#                21210		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21211		A: 13	B: 18	Cin:0		Sum: 31	Cout:0
+#                21311		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21312		A: 13	B: 19	Cin:0		Sum: 32	Cout:0
+#                21412		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21413		A: 13	B: 20	Cin:0		Sum: 33	Cout:0
+#                21513		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21514		A: 13	B: 21	Cin:0		Sum: 34	Cout:0
+#                21614		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21615		A: 13	B: 22	Cin:0		Sum: 35	Cout:0
+#                21715		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21716		A: 13	B: 23	Cin:0		Sum: 36	Cout:0
+#                21816		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21817		A: 13	B: 24	Cin:0		Sum: 37	Cout:0
+#                21917		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                21918		A: 13	B: 25	Cin:0		Sum: 38	Cout:0
+#                22018		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                22019		A: 13	B: 26	Cin:0		Sum: 39	Cout:0
+#                22119		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                22120		A: 13	B: 27	Cin:0		Sum: 40	Cout:0
+#                22220		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                22221		A: 13	B: 28	Cin:0		Sum: 41	Cout:0
+#                22321		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                22322		A: 13	B: 29	Cin:0		Sum: 42	Cout:0
+#                22422		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                22423		A: 13	B: 30	Cin:0		Sum: 43	Cout:0
+#                22523		A: 13	B:  x	Cin:x		Sum:  x	Cout:x
+#                22524		A: 13	B: 31	Cin:0		Sum: 44	Cout:0
+#                22624		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                22625		A: 14	B: 16	Cin:0		Sum: 30	Cout:0
+#                22725		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                22726		A: 14	B: 17	Cin:0		Sum: 31	Cout:0
+#                22826		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                22827		A: 14	B: 18	Cin:0		Sum: 32	Cout:0
+#                22927		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                22928		A: 14	B: 19	Cin:0		Sum: 33	Cout:0
+#                23028		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23029		A: 14	B: 20	Cin:0		Sum: 34	Cout:0
+#                23129		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23130		A: 14	B: 21	Cin:0		Sum: 35	Cout:0
+#                23230		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23231		A: 14	B: 22	Cin:0		Sum: 36	Cout:0
+#                23331		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23332		A: 14	B: 23	Cin:0		Sum: 37	Cout:0
+#                23432		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23433		A: 14	B: 24	Cin:0		Sum: 38	Cout:0
+#                23533		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23534		A: 14	B: 25	Cin:0		Sum: 39	Cout:0
+#                23634		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23635		A: 14	B: 26	Cin:0		Sum: 40	Cout:0
+#                23735		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23736		A: 14	B: 27	Cin:0		Sum: 41	Cout:0
+#                23836		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23837		A: 14	B: 28	Cin:0		Sum: 42	Cout:0
+#                23937		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                23938		A: 14	B: 29	Cin:0		Sum: 43	Cout:0
+#                24038		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                24039		A: 14	B: 30	Cin:0		Sum: 44	Cout:0
+#                24139		A: 14	B:  x	Cin:x		Sum:  x	Cout:x
+#                24140		A: 14	B: 31	Cin:0		Sum: 45	Cout:0
+#                24240		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                24241		A: 15	B: 16	Cin:0		Sum: 31	Cout:0
+#                24341		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                24342		A: 15	B: 17	Cin:0		Sum: 32	Cout:0
+#                24442		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                24443		A: 15	B: 18	Cin:0		Sum: 33	Cout:0
+#                24543		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                24544		A: 15	B: 19	Cin:0		Sum: 34	Cout:0
+#                24644		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                24645		A: 15	B: 20	Cin:0		Sum: 35	Cout:0
+#                24745		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                24746		A: 15	B: 21	Cin:0		Sum: 36	Cout:0
+#                24846		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                24847		A: 15	B: 22	Cin:0		Sum: 37	Cout:0
+#                24947		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                24948		A: 15	B: 23	Cin:0		Sum: 38	Cout:0
+#                25048		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                25049		A: 15	B: 24	Cin:0		Sum: 39	Cout:0
+#                25149		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                25150		A: 15	B: 25	Cin:0		Sum: 40	Cout:0
+#                25250		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                25251		A: 15	B: 26	Cin:0		Sum: 41	Cout:0
+#                25351		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                25352		A: 15	B: 27	Cin:0		Sum: 42	Cout:0
+#                25452		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                25453		A: 15	B: 28	Cin:0		Sum: 43	Cout:0
+#                25553		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                25554		A: 15	B: 29	Cin:0		Sum: 44	Cout:0
+#                25654		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                25655		A: 15	B: 30	Cin:0		Sum: 45	Cout:0
+#                25755		A: 15	B:  x	Cin:x		Sum:  x	Cout:x
+#                25756		A: 15	B: 31	Cin:0		Sum: 46	Cout:0
+# Test some cases with carry in = 1
+#                25856		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                25857		A: 80	B:160	Cin:1		Sum:241	Cout:0
+#                25957		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                25958		A: 80	B:161	Cin:1		Sum:242	Cout:0
+#                26058		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26059		A: 80	B:162	Cin:1		Sum:243	Cout:0
+#                26159		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26160		A: 80	B:163	Cin:1		Sum:244	Cout:0
+#                26260		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26261		A: 80	B:164	Cin:1		Sum:245	Cout:0
+#                26361		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26362		A: 80	B:165	Cin:1		Sum:246	Cout:0
+#                26462		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26463		A: 80	B:166	Cin:1		Sum:247	Cout:0
+#                26563		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26564		A: 80	B:167	Cin:1		Sum:248	Cout:0
+#                26664		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26665		A: 80	B:168	Cin:1		Sum:249	Cout:0
+#                26765		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26766		A: 80	B:169	Cin:1		Sum:250	Cout:0
+#                26866		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26867		A: 80	B:170	Cin:1		Sum:251	Cout:0
+#                26967		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                26968		A: 80	B:171	Cin:1		Sum:252	Cout:0
+#                27068		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                27069		A: 80	B:172	Cin:1		Sum:253	Cout:0
+#                27169		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                27170		A: 80	B:173	Cin:1		Sum:254	Cout:0
+#                27270		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                27271		A: 80	B:174	Cin:1		Sum:255	Cout:0
+#                27371		A: 80	B:  x	Cin:x		Sum:  x	Cout:x
+#                27372		A: 80	B:175	Cin:1		Sum:  0	Cout:1
+#                27472		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                27473		A: 81	B:160	Cin:1		Sum:242	Cout:0
+#                27573		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                27574		A: 81	B:161	Cin:1		Sum:243	Cout:0
+#                27674		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                27675		A: 81	B:162	Cin:1		Sum:244	Cout:0
+#                27775		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                27776		A: 81	B:163	Cin:1		Sum:245	Cout:0
+#                27876		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                27877		A: 81	B:164	Cin:1		Sum:246	Cout:0
+#                27977		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                27978		A: 81	B:165	Cin:1		Sum:247	Cout:0
+#                28078		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28079		A: 81	B:166	Cin:1		Sum:248	Cout:0
+#                28179		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28180		A: 81	B:167	Cin:1		Sum:249	Cout:0
+#                28280		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28281		A: 81	B:168	Cin:1		Sum:250	Cout:0
+#                28381		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28382		A: 81	B:169	Cin:1		Sum:251	Cout:0
+#                28482		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28483		A: 81	B:170	Cin:1		Sum:252	Cout:0
+#                28583		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28584		A: 81	B:171	Cin:1		Sum:253	Cout:0
+#                28684		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28685		A: 81	B:172	Cin:1		Sum:254	Cout:0
+#                28785		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28786		A: 81	B:173	Cin:1		Sum:255	Cout:0
+#                28886		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28887		A: 81	B:174	Cin:1		Sum:  0	Cout:1
+#                28987		A: 81	B:  x	Cin:x		Sum:  x	Cout:x
+#                28988		A: 81	B:175	Cin:1		Sum:  1	Cout:1
+#                29088		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29089		A: 82	B:160	Cin:1		Sum:243	Cout:0
+#                29189		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29190		A: 82	B:161	Cin:1		Sum:244	Cout:0
+#                29290		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29291		A: 82	B:162	Cin:1		Sum:245	Cout:0
+#                29391		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29392		A: 82	B:163	Cin:1		Sum:246	Cout:0
+#                29492		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29493		A: 82	B:164	Cin:1		Sum:247	Cout:0
+#                29593		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29594		A: 82	B:165	Cin:1		Sum:248	Cout:0
+#                29694		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29695		A: 82	B:166	Cin:1		Sum:249	Cout:0
+#                29795		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29796		A: 82	B:167	Cin:1		Sum:250	Cout:0
+#                29896		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29897		A: 82	B:168	Cin:1		Sum:251	Cout:0
+#                29997		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                29998		A: 82	B:169	Cin:1		Sum:252	Cout:0
+#                30098		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                30099		A: 82	B:170	Cin:1		Sum:253	Cout:0
+#                30199		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                30200		A: 82	B:171	Cin:1		Sum:254	Cout:0
+#                30300		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                30301		A: 82	B:172	Cin:1		Sum:255	Cout:0
+#                30401		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                30402		A: 82	B:173	Cin:1		Sum:  0	Cout:1
+#                30502		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                30503		A: 82	B:174	Cin:1		Sum:  1	Cout:1
+#                30603		A: 82	B:  x	Cin:x		Sum:  x	Cout:x
+#                30604		A: 82	B:175	Cin:1		Sum:  2	Cout:1
+#                30704		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                30705		A: 83	B:160	Cin:1		Sum:244	Cout:0
+#                30805		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                30806		A: 83	B:161	Cin:1		Sum:245	Cout:0
+#                30906		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                30907		A: 83	B:162	Cin:1		Sum:246	Cout:0
+#                31007		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31008		A: 83	B:163	Cin:1		Sum:247	Cout:0
+#                31108		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31109		A: 83	B:164	Cin:1		Sum:248	Cout:0
+#                31209		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31210		A: 83	B:165	Cin:1		Sum:249	Cout:0
+#                31310		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31311		A: 83	B:166	Cin:1		Sum:250	Cout:0
+#                31411		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31412		A: 83	B:167	Cin:1		Sum:251	Cout:0
+#                31512		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31513		A: 83	B:168	Cin:1		Sum:252	Cout:0
+#                31613		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31614		A: 83	B:169	Cin:1		Sum:253	Cout:0
+#                31714		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31715		A: 83	B:170	Cin:1		Sum:254	Cout:0
+#                31815		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31816		A: 83	B:171	Cin:1		Sum:255	Cout:0
+#                31916		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                31917		A: 83	B:172	Cin:1		Sum:  0	Cout:1
+#                32017		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                32018		A: 83	B:173	Cin:1		Sum:  1	Cout:1
+#                32118		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                32119		A: 83	B:174	Cin:1		Sum:  2	Cout:1
+#                32219		A: 83	B:  x	Cin:x		Sum:  x	Cout:x
+#                32220		A: 83	B:175	Cin:1		Sum:  3	Cout:1
+#                32320		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                32321		A: 84	B:160	Cin:1		Sum:245	Cout:0
+#                32421		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                32422		A: 84	B:161	Cin:1		Sum:246	Cout:0
+#                32522		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                32523		A: 84	B:162	Cin:1		Sum:247	Cout:0
+#                32623		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                32624		A: 84	B:163	Cin:1		Sum:248	Cout:0
+#                32724		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                32725		A: 84	B:164	Cin:1		Sum:249	Cout:0
+#                32825		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                32826		A: 84	B:165	Cin:1		Sum:250	Cout:0
+#                32926		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                32927		A: 84	B:166	Cin:1		Sum:251	Cout:0
+#                33027		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33028		A: 84	B:167	Cin:1		Sum:252	Cout:0
+#                33128		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33129		A: 84	B:168	Cin:1		Sum:253	Cout:0
+#                33229		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33230		A: 84	B:169	Cin:1		Sum:254	Cout:0
+#                33330		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33331		A: 84	B:170	Cin:1		Sum:255	Cout:0
+#                33431		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33432		A: 84	B:171	Cin:1		Sum:  0	Cout:1
+#                33532		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33533		A: 84	B:172	Cin:1		Sum:  1	Cout:1
+#                33633		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33634		A: 84	B:173	Cin:1		Sum:  2	Cout:1
+#                33734		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33735		A: 84	B:174	Cin:1		Sum:  3	Cout:1
+#                33835		A: 84	B:  x	Cin:x		Sum:  x	Cout:x
+#                33836		A: 84	B:175	Cin:1		Sum:  4	Cout:1
+#                33936		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                33937		A: 85	B:160	Cin:1		Sum:246	Cout:0
+#                34037		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34038		A: 85	B:161	Cin:1		Sum:247	Cout:0
+#                34138		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34139		A: 85	B:162	Cin:1		Sum:248	Cout:0
+#                34239		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34240		A: 85	B:163	Cin:1		Sum:249	Cout:0
+#                34340		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34341		A: 85	B:164	Cin:1		Sum:250	Cout:0
+#                34441		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34442		A: 85	B:165	Cin:1		Sum:251	Cout:0
+#                34542		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34543		A: 85	B:166	Cin:1		Sum:252	Cout:0
+#                34643		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34644		A: 85	B:167	Cin:1		Sum:253	Cout:0
+#                34744		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34745		A: 85	B:168	Cin:1		Sum:254	Cout:0
+#                34845		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34846		A: 85	B:169	Cin:1		Sum:255	Cout:0
+#                34946		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                34947		A: 85	B:170	Cin:1		Sum:  0	Cout:1
+#                35047		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                35048		A: 85	B:171	Cin:1		Sum:  1	Cout:1
+#                35148		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                35149		A: 85	B:172	Cin:1		Sum:  2	Cout:1
+#                35249		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                35250		A: 85	B:173	Cin:1		Sum:  3	Cout:1
+#                35350		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                35351		A: 85	B:174	Cin:1		Sum:  4	Cout:1
+#                35451		A: 85	B:  x	Cin:x		Sum:  x	Cout:x
+#                35452		A: 85	B:175	Cin:1		Sum:  5	Cout:1
+#                35552		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                35553		A: 86	B:160	Cin:1		Sum:247	Cout:0
+#                35653		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                35654		A: 86	B:161	Cin:1		Sum:248	Cout:0
+#                35754		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                35755		A: 86	B:162	Cin:1		Sum:249	Cout:0
+#                35855		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                35856		A: 86	B:163	Cin:1		Sum:250	Cout:0
+#                35956		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                35957		A: 86	B:164	Cin:1		Sum:251	Cout:0
+#                36057		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36058		A: 86	B:165	Cin:1		Sum:252	Cout:0
+#                36158		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36159		A: 86	B:166	Cin:1		Sum:253	Cout:0
+#                36259		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36260		A: 86	B:167	Cin:1		Sum:254	Cout:0
+#                36360		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36361		A: 86	B:168	Cin:1		Sum:255	Cout:0
+#                36461		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36462		A: 86	B:169	Cin:1		Sum:  0	Cout:1
+#                36562		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36563		A: 86	B:170	Cin:1		Sum:  1	Cout:1
+#                36663		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36664		A: 86	B:171	Cin:1		Sum:  2	Cout:1
+#                36764		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36765		A: 86	B:172	Cin:1		Sum:  3	Cout:1
+#                36865		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36866		A: 86	B:173	Cin:1		Sum:  4	Cout:1
+#                36966		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                36967		A: 86	B:174	Cin:1		Sum:  5	Cout:1
+#                37067		A: 86	B:  x	Cin:x		Sum:  x	Cout:x
+#                37068		A: 86	B:175	Cin:1		Sum:  6	Cout:1
+#                37168		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37169		A: 87	B:160	Cin:1		Sum:248	Cout:0
+#                37269		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37270		A: 87	B:161	Cin:1		Sum:249	Cout:0
+#                37370		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37371		A: 87	B:162	Cin:1		Sum:250	Cout:0
+#                37471		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37472		A: 87	B:163	Cin:1		Sum:251	Cout:0
+#                37572		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37573		A: 87	B:164	Cin:1		Sum:252	Cout:0
+#                37673		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37674		A: 87	B:165	Cin:1		Sum:253	Cout:0
+#                37774		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37775		A: 87	B:166	Cin:1		Sum:254	Cout:0
+#                37875		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37876		A: 87	B:167	Cin:1		Sum:255	Cout:0
+#                37976		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                37977		A: 87	B:168	Cin:1		Sum:  0	Cout:1
+#                38077		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                38078		A: 87	B:169	Cin:1		Sum:  1	Cout:1
+#                38178		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                38179		A: 87	B:170	Cin:1		Sum:  2	Cout:1
+#                38279		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                38280		A: 87	B:171	Cin:1		Sum:  3	Cout:1
+#                38380		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                38381		A: 87	B:172	Cin:1		Sum:  4	Cout:1
+#                38481		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                38482		A: 87	B:173	Cin:1		Sum:  5	Cout:1
+#                38582		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                38583		A: 87	B:174	Cin:1		Sum:  6	Cout:1
+#                38683		A: 87	B:  x	Cin:x		Sum:  x	Cout:x
+#                38684		A: 87	B:175	Cin:1		Sum:  7	Cout:1
+#                38784		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                38785		A: 88	B:160	Cin:1		Sum:249	Cout:0
+#                38885		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                38886		A: 88	B:161	Cin:1		Sum:250	Cout:0
+#                38986		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                38987		A: 88	B:162	Cin:1		Sum:251	Cout:0
+#                39087		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39088		A: 88	B:163	Cin:1		Sum:252	Cout:0
+#                39188		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39189		A: 88	B:164	Cin:1		Sum:253	Cout:0
+#                39289		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39290		A: 88	B:165	Cin:1		Sum:254	Cout:0
+#                39390		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39391		A: 88	B:166	Cin:1		Sum:255	Cout:0
+#                39491		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39492		A: 88	B:167	Cin:1		Sum:  0	Cout:1
+#                39592		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39593		A: 88	B:168	Cin:1		Sum:  1	Cout:1
+#                39693		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39694		A: 88	B:169	Cin:1		Sum:  2	Cout:1
+#                39794		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39795		A: 88	B:170	Cin:1		Sum:  3	Cout:1
+#                39895		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39896		A: 88	B:171	Cin:1		Sum:  4	Cout:1
+#                39996		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                39997		A: 88	B:172	Cin:1		Sum:  5	Cout:1
+#                40097		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                40098		A: 88	B:173	Cin:1		Sum:  6	Cout:1
+#                40198		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                40199		A: 88	B:174	Cin:1		Sum:  7	Cout:1
+#                40299		A: 88	B:  x	Cin:x		Sum:  x	Cout:x
+#                40300		A: 88	B:175	Cin:1		Sum:  8	Cout:1
+#                40400		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                40401		A: 89	B:160	Cin:1		Sum:250	Cout:0
+#                40501		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                40502		A: 89	B:161	Cin:1		Sum:251	Cout:0
+#                40602		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                40603		A: 89	B:162	Cin:1		Sum:252	Cout:0
+#                40703		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                40704		A: 89	B:163	Cin:1		Sum:253	Cout:0
+#                40804		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                40805		A: 89	B:164	Cin:1		Sum:254	Cout:0
+#                40905		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                40906		A: 89	B:165	Cin:1		Sum:255	Cout:0
+#                41006		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41007		A: 89	B:166	Cin:1		Sum:  0	Cout:1
+#                41107		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41108		A: 89	B:167	Cin:1		Sum:  1	Cout:1
+#                41208		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41209		A: 89	B:168	Cin:1		Sum:  2	Cout:1
+#                41309		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41310		A: 89	B:169	Cin:1		Sum:  3	Cout:1
+#                41410		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41411		A: 89	B:170	Cin:1		Sum:  4	Cout:1
+#                41511		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41512		A: 89	B:171	Cin:1		Sum:  5	Cout:1
+#                41612		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41613		A: 89	B:172	Cin:1		Sum:  6	Cout:1
+#                41713		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41714		A: 89	B:173	Cin:1		Sum:  7	Cout:1
+#                41814		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41815		A: 89	B:174	Cin:1		Sum:  8	Cout:1
+#                41915		A: 89	B:  x	Cin:x		Sum:  x	Cout:x
+#                41916		A: 89	B:175	Cin:1		Sum:  9	Cout:1
+#                42016		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42017		A: 90	B:160	Cin:1		Sum:251	Cout:0
+#                42117		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42118		A: 90	B:161	Cin:1		Sum:252	Cout:0
+#                42218		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42219		A: 90	B:162	Cin:1		Sum:253	Cout:0
+#                42319		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42320		A: 90	B:163	Cin:1		Sum:254	Cout:0
+#                42420		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42421		A: 90	B:164	Cin:1		Sum:255	Cout:0
+#                42521		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42522		A: 90	B:165	Cin:1		Sum:  0	Cout:1
+#                42622		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42623		A: 90	B:166	Cin:1		Sum:  1	Cout:1
+#                42723		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42724		A: 90	B:167	Cin:1		Sum:  2	Cout:1
+#                42824		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42825		A: 90	B:168	Cin:1		Sum:  3	Cout:1
+#                42925		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                42926		A: 90	B:169	Cin:1		Sum:  4	Cout:1
+#                43026		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                43027		A: 90	B:170	Cin:1		Sum:  5	Cout:1
+#                43127		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                43128		A: 90	B:171	Cin:1		Sum:  6	Cout:1
+#                43228		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                43229		A: 90	B:172	Cin:1		Sum:  7	Cout:1
+#                43329		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                43330		A: 90	B:173	Cin:1		Sum:  8	Cout:1
+#                43430		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                43431		A: 90	B:174	Cin:1		Sum:  9	Cout:1
+#                43531		A: 90	B:  x	Cin:x		Sum:  x	Cout:x
+#                43532		A: 90	B:175	Cin:1		Sum: 10	Cout:1
+#                43632		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                43633		A: 91	B:160	Cin:1		Sum:252	Cout:0
+#                43733		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                43734		A: 91	B:161	Cin:1		Sum:253	Cout:0
+#                43834		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                43835		A: 91	B:162	Cin:1		Sum:254	Cout:0
+#                43935		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                43936		A: 91	B:163	Cin:1		Sum:255	Cout:0
+#                44036		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44037		A: 91	B:164	Cin:1		Sum:  0	Cout:1
+#                44137		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44138		A: 91	B:165	Cin:1		Sum:  1	Cout:1
+#                44238		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44239		A: 91	B:166	Cin:1		Sum:  2	Cout:1
+#                44339		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44340		A: 91	B:167	Cin:1		Sum:  3	Cout:1
+#                44440		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44441		A: 91	B:168	Cin:1		Sum:  4	Cout:1
+#                44541		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44542		A: 91	B:169	Cin:1		Sum:  5	Cout:1
+#                44642		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44643		A: 91	B:170	Cin:1		Sum:  6	Cout:1
+#                44743		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44744		A: 91	B:171	Cin:1		Sum:  7	Cout:1
+#                44844		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44845		A: 91	B:172	Cin:1		Sum:  8	Cout:1
+#                44945		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                44946		A: 91	B:173	Cin:1		Sum:  9	Cout:1
+#                45046		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                45047		A: 91	B:174	Cin:1		Sum: 10	Cout:1
+#                45147		A: 91	B:  x	Cin:x		Sum:  x	Cout:x
+#                45148		A: 91	B:175	Cin:1		Sum: 11	Cout:1
+#                45248		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                45249		A: 92	B:160	Cin:1		Sum:253	Cout:0
+#                45349		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                45350		A: 92	B:161	Cin:1		Sum:254	Cout:0
+#                45450		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                45451		A: 92	B:162	Cin:1		Sum:255	Cout:0
+#                45551		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                45552		A: 92	B:163	Cin:1		Sum:  0	Cout:1
+#                45652		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                45653		A: 92	B:164	Cin:1		Sum:  1	Cout:1
+#                45753		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                45754		A: 92	B:165	Cin:1		Sum:  2	Cout:1
+#                45854		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                45855		A: 92	B:166	Cin:1		Sum:  3	Cout:1
+#                45955		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                45956		A: 92	B:167	Cin:1		Sum:  4	Cout:1
+#                46056		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                46057		A: 92	B:168	Cin:1		Sum:  5	Cout:1
+#                46157		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                46158		A: 92	B:169	Cin:1		Sum:  6	Cout:1
+#                46258		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                46259		A: 92	B:170	Cin:1		Sum:  7	Cout:1
+#                46359		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                46360		A: 92	B:171	Cin:1		Sum:  8	Cout:1
+#                46460		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                46461		A: 92	B:172	Cin:1		Sum:  9	Cout:1
+#                46561		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                46562		A: 92	B:173	Cin:1		Sum: 10	Cout:1
+#                46662		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                46663		A: 92	B:174	Cin:1		Sum: 11	Cout:1
+#                46763		A: 92	B:  x	Cin:x		Sum:  x	Cout:x
+#                46764		A: 92	B:175	Cin:1		Sum: 12	Cout:1
+#                46864		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                46865		A: 93	B:160	Cin:1		Sum:254	Cout:0
+#                46965		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                46966		A: 93	B:161	Cin:1		Sum:255	Cout:0
+#                47066		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47067		A: 93	B:162	Cin:1		Sum:  0	Cout:1
+#                47167		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47168		A: 93	B:163	Cin:1		Sum:  1	Cout:1
+#                47268		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47269		A: 93	B:164	Cin:1		Sum:  2	Cout:1
+#                47369		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47370		A: 93	B:165	Cin:1		Sum:  3	Cout:1
+#                47470		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47471		A: 93	B:166	Cin:1		Sum:  4	Cout:1
+#                47571		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47572		A: 93	B:167	Cin:1		Sum:  5	Cout:1
+#                47672		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47673		A: 93	B:168	Cin:1		Sum:  6	Cout:1
+#                47773		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47774		A: 93	B:169	Cin:1		Sum:  7	Cout:1
+#                47874		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47875		A: 93	B:170	Cin:1		Sum:  8	Cout:1
+#                47975		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                47976		A: 93	B:171	Cin:1		Sum:  9	Cout:1
+#                48076		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                48077		A: 93	B:172	Cin:1		Sum: 10	Cout:1
+#                48177		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                48178		A: 93	B:173	Cin:1		Sum: 11	Cout:1
+#                48278		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                48279		A: 93	B:174	Cin:1		Sum: 12	Cout:1
+#                48379		A: 93	B:  x	Cin:x		Sum:  x	Cout:x
+#                48380		A: 93	B:175	Cin:1		Sum: 13	Cout:1
+#                48480		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                48481		A: 94	B:160	Cin:1		Sum:255	Cout:0
+#                48581		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                48582		A: 94	B:161	Cin:1		Sum:  0	Cout:1
+#                48682		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                48683		A: 94	B:162	Cin:1		Sum:  1	Cout:1
+#                48783		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                48784		A: 94	B:163	Cin:1		Sum:  2	Cout:1
+#                48884		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                48885		A: 94	B:164	Cin:1		Sum:  3	Cout:1
+#                48985		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                48986		A: 94	B:165	Cin:1		Sum:  4	Cout:1
+#                49086		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49087		A: 94	B:166	Cin:1		Sum:  5	Cout:1
+#                49187		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49188		A: 94	B:167	Cin:1		Sum:  6	Cout:1
+#                49288		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49289		A: 94	B:168	Cin:1		Sum:  7	Cout:1
+#                49389		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49390		A: 94	B:169	Cin:1		Sum:  8	Cout:1
+#                49490		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49491		A: 94	B:170	Cin:1		Sum:  9	Cout:1
+#                49591		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49592		A: 94	B:171	Cin:1		Sum: 10	Cout:1
+#                49692		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49693		A: 94	B:172	Cin:1		Sum: 11	Cout:1
+#                49793		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49794		A: 94	B:173	Cin:1		Sum: 12	Cout:1
+#                49894		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49895		A: 94	B:174	Cin:1		Sum: 13	Cout:1
+#                49995		A: 94	B:  x	Cin:x		Sum:  x	Cout:x
+#                49996		A: 94	B:175	Cin:1		Sum: 14	Cout:1
+#                50096		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50097		A: 95	B:160	Cin:1		Sum:  0	Cout:1
+#                50197		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50198		A: 95	B:161	Cin:1		Sum:  1	Cout:1
+#                50298		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50299		A: 95	B:162	Cin:1		Sum:  2	Cout:1
+#                50399		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50400		A: 95	B:163	Cin:1		Sum:  3	Cout:1
+#                50500		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50501		A: 95	B:164	Cin:1		Sum:  4	Cout:1
+#                50601		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50602		A: 95	B:165	Cin:1		Sum:  5	Cout:1
+#                50702		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50703		A: 95	B:166	Cin:1		Sum:  6	Cout:1
+#                50803		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50804		A: 95	B:167	Cin:1		Sum:  7	Cout:1
+#                50904		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                50905		A: 95	B:168	Cin:1		Sum:  8	Cout:1
+#                51005		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                51006		A: 95	B:169	Cin:1		Sum:  9	Cout:1
+#                51106		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                51107		A: 95	B:170	Cin:1		Sum: 10	Cout:1
+#                51207		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                51208		A: 95	B:171	Cin:1		Sum: 11	Cout:1
+#                51308		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                51309		A: 95	B:172	Cin:1		Sum: 12	Cout:1
+#                51409		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                51410		A: 95	B:173	Cin:1		Sum: 13	Cout:1
+#                51510		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                51511		A: 95	B:174	Cin:1		Sum: 14	Cout:1
+#                51611		A: 95	B:  x	Cin:x		Sum:  x	Cout:x
+#                51612		A: 95	B:175	Cin:1		Sum: 15	Cout:1
+# ** Note: $stop    : //thoth.cecs.pdx.edu/Home05/nand/Downloads/ece351sp1_exercise1_starter_hdl/tb_rca_8bits.released.sv(68)
+#    Time: 51717 ns  Iteration: 0  Instance: /tb_rca_8bits
+# Break in NamedBeginStat stimulus at //thoth.cecs.pdx.edu/Home05/nand/Downloads/ece351sp1_exercise1_starter_hdl/tb_rca_8bits.released.sv line 68

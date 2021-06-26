@@ -1,0 +1,52 @@
+# Compile of uart_tx.txt was successful.
+# Compile of uart_rx.txt was successful.
+# Compile of baud_gen.txt was successful.
+# Compile of tb_uart_loopback.txt was successful.
+# Compile of fsm.sv was successful.
+# Compile of tb_imp_fsm.sv was successful.
+# Compile of hw3_prob1.sv was successful.
+# Compile of tb_hw3_prob1.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.top
+# vsim -voptargs="+acc" work.top 
+# Start time: 14:34:46 on May 30,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "carwash_fsm(fast)".
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.carwash_fsm(fast)
+# Loading work.tb_carwash(fast)
+run -all
+# 
+# Car Wash FSM Path Test - Ryan Nand (nand@pdx.edu)
+# Sources: N:/QuestaSim2
+# 
+# Time:   0 Current state = 	||	 Inputs: clr = 0, Token = 0, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# 
+# **First see if clr works.**
+# Time:   5 Current state = S0	||	 Inputs: clr = 0, Token = 1, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# Time:  15 Current state = S1	||	 Inputs: clr = 1, Token = 0, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 1, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# Time:  25 Current state = S0	||	 Inputs: clr = 0, Token = 0, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# 
+# **Insert token and try first path - cheap.**
+# Time:  35 Current state = S0	||	 Inputs: clr = 0, Token = 1, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# **Press start for cheap path.**
+# Time:  45 Current state = S1	||	 Inputs: clr = 0, Token = 0, Start = 1, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 1, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# Time:  55 Current state = S4	||	 Inputs: clr = 0, Token = 0, Start = 0, T1Done = 1, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 1
+# Time:  65 Current state = S0	||	 Inputs: clr = 0, Token = 0, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# 
+# **Try second path - expensive.**
+# Time:  85 Current state = S0	||	 Inputs: clr = 0, Token = 1, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# **Insert another token for expensive path**
+# Time:  95 Current state = S1	||	 Inputs: clr = 0, Token = 1, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 1, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# Time: 105 Current state = S2	||	 Inputs: clr = 0, Token = 0, Start = 0, T1Done = 1, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 1, SOAP = 0, SPRAY = 1
+# Time: 115 Current state = S3	||	 Inputs: clr = 0, Token = 0, Start = 0, T1Done = 0, T2Done = 1	||	 Outputs: CLRT1 = 1, CLRT2 = 0, SOAP = 1, SPRAY = 0
+# Time: 125 Current state = S4	||	 Inputs: clr = 0, Token = 0, Start = 0, T1Done = 1, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 1
+# Time: 135 Current state = S0	||	 Inputs: clr = 0, Token = 0, Start = 0, T1Done = 0, T2Done = 0	||	 Outputs: CLRT1 = 0, CLRT2 = 0, SOAP = 0, SPRAY = 0
+# 
+# **All paths have been tested for!**
+# End Car Wash FSM Path Test - Ryan Nand (nand@pdx.edu)
+# 
+# ** Note: $stop    : N:/QuestaSim2/tb_imp_fsm.sv(92)
+#    Time: 145 ns  Iteration: 1  Instance: /top/tb
+# Break in NamedBeginStat implicit_FSM at N:/QuestaSim2/tb_imp_fsm.sv line 92

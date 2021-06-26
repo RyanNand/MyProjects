@@ -1,0 +1,36 @@
+# Compile of alu_regfile_defs.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of hw2_prob3_ALU.sv was successful.
+# Compile of hw2_prob3_dut.sv was successful.
+# Compile of tb_hw2_prob3.sv was successful.
+# Compile of hw2_prob1.sv was successful.
+# Compile of tb_hw2_prob1.sv was successful.
+# Compile of hw2_prob2.sv was successful.
+# Compile of tb_hw2_prob2.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.tb_hw2_prob1
+# vsim work.tb_hw2_prob1 
+# Start time: 12:52:24 on May 10,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.tb_hw2_prob1(fast)
+run -all
+# At time   0	:	Inputs: A = 0,	B = 0,	C = 0,	D = 0,	Output: Y = 0
+# At time   5	:	Inputs: A = 0,	B = 0,	C = 0,	D = 1,	Output: Y = 0
+# At time  10	:	Inputs: A = 0,	B = 0,	C = 1,	D = 0,	Output: Y = 0
+# At time  15	:	Inputs: A = 0,	B = 0,	C = 1,	D = 1,	Output: Y = 0
+# At time  20	:	Inputs: A = 0,	B = 1,	C = 0,	D = 0,	Output: Y = 0
+# At time  25	:	Inputs: A = 0,	B = 1,	C = 0,	D = 1,	Output: Y = 0
+# At time  30	:	Inputs: A = 0,	B = 1,	C = 1,	D = 0,	Output: Y = 1
+# At time  35	:	Inputs: A = 0,	B = 1,	C = 1,	D = 1,	Output: Y = 0
+# At time  40	:	Inputs: A = 1,	B = 0,	C = 0,	D = 0,	Output: Y = 0
+# At time  45	:	Inputs: A = 1,	B = 0,	C = 0,	D = 1,	Output: Y = 0
+# At time  50	:	Inputs: A = 1,	B = 0,	C = 1,	D = 0,	Output: Y = 0
+# At time  55	:	Inputs: A = 1,	B = 0,	C = 1,	D = 1,	Output: Y = 0
+# At time  60	:	Inputs: A = 1,	B = 1,	C = 0,	D = 0,	Output: Y = 0
+# At time  65	:	Inputs: A = 1,	B = 1,	C = 0,	D = 1,	Output: Y = 0
+# At time  70	:	Inputs: A = 1,	B = 1,	C = 1,	D = 0,	Output: Y = 0
+# At time  75	:	Inputs: A = 1,	B = 1,	C = 1,	D = 1,	Output: Y = 0
+# ** Note: $stop    : N:/QuestaSim/tb_hw2_prob1.sv(45)
+#    Time: 80 ns  Iteration: 0  Instance: /tb_hw2_prob1
+# Break at N:/QuestaSim/tb_hw2_prob1.sv line 45

@@ -1,0 +1,13 @@
+vsim -voptargs=+acc work.tb_CLA4BIT
+# vsim -voptargs="+acc" work.tb_CLA4BIT 
+# Start time: 15:19:38 on Apr 26,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb_CLA4BIT(fast)
+# Loading work.stimulus(fast)
+# Loading work.dutcla_4b(fast)
+# Loading work.cla_sb(fast)
+run -all
+# ***Congratulations, No errors found after         512 tests***
+set PrefMain(saveFile) //thoth.cecs.pdx.edu/Home05/nand/Desktop/transcript_1
+# //thoth.cecs.pdx.edu/Home05/nand/Desktop/transcript_1

@@ -1,0 +1,84 @@
+# Compile of alu_regfile_defs.sv was successful.
+# Compile of register_file.sv was successful.
+# Compile of hw2_prob3_ALU.sv was successful.
+# Compile of hw2_prob3_dut.sv was successful.
+# Compile of tb_hw2_prob3.sv was successful.
+# Compile of hw2_prob1.sv was successful.
+# Compile of tb_hw2_prob1.sv was successful.
+# Compile of hw2_prob2.sv was successful.
+# Compile of tb_hw2_prob2.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.tb_hw2_prob2
+# vsim work.tb_hw2_prob2 
+# Start time: 12:54:53 on May 10,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.tb_hw2_prob2(fast)
+run -all
+# At time   0	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 0,	in3 = 0,	in4 = 0,	in5 = 0,	Output: Y = 1
+# At time   5	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 0,	in3 = 0,	in4 = 0,	in5 = 1,	Output: Y = 1
+# At time  10	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 0,	in3 = 0,	in4 = 1,	in5 = 0,	Output: Y = 1
+# At time  15	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 0,	in3 = 0,	in4 = 1,	in5 = 1,	Output: Y = 1
+# At time  20	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 0,	in3 = 1,	in4 = 0,	in5 = 0,	Output: Y = 1
+# At time  25	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 0,	in3 = 1,	in4 = 0,	in5 = 1,	Output: Y = 1
+# At time  30	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 0,	in3 = 1,	in4 = 1,	in5 = 0,	Output: Y = 1
+# At time  35	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 0,	in3 = 1,	in4 = 1,	in5 = 1,	Output: Y = 0
+# At time  40	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 1,	in3 = 0,	in4 = 0,	in5 = 0,	Output: Y = 1
+# At time  45	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 1,	in3 = 0,	in4 = 0,	in5 = 1,	Output: Y = 1
+# At time  50	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 1,	in3 = 0,	in4 = 1,	in5 = 0,	Output: Y = 1
+# At time  55	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 1,	in3 = 0,	in4 = 1,	in5 = 1,	Output: Y = 1
+# At time  60	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 1,	in3 = 1,	in4 = 0,	in5 = 0,	Output: Y = 1
+# At time  65	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 1,	in3 = 1,	in4 = 0,	in5 = 1,	Output: Y = 1
+# At time  70	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 1,	in3 = 1,	in4 = 1,	in5 = 0,	Output: Y = 1
+# At time  75	:	Inputs: EnableN = 0,	in1 = 0,	in2 = 1,	in3 = 1,	in4 = 1,	in5 = 1,	Output: Y = 0
+# At time  80	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 0,	in3 = 0,	in4 = 0,	in5 = 0,	Output: Y = 1
+# At time  85	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 0,	in3 = 0,	in4 = 0,	in5 = 1,	Output: Y = 1
+# At time  90	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 0,	in3 = 0,	in4 = 1,	in5 = 0,	Output: Y = 1
+# At time  95	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 0,	in3 = 0,	in4 = 1,	in5 = 1,	Output: Y = 1
+# At time 100	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 0,	in3 = 1,	in4 = 0,	in5 = 0,	Output: Y = 1
+# At time 105	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 0,	in3 = 1,	in4 = 0,	in5 = 1,	Output: Y = 1
+# At time 110	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 0,	in3 = 1,	in4 = 1,	in5 = 0,	Output: Y = 1
+# At time 115	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 0,	in3 = 1,	in4 = 1,	in5 = 1,	Output: Y = 0
+# At time 120	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 1,	in3 = 0,	in4 = 0,	in5 = 0,	Output: Y = 0
+# At time 125	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 1,	in3 = 0,	in4 = 0,	in5 = 1,	Output: Y = 0
+# At time 130	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 1,	in3 = 0,	in4 = 1,	in5 = 0,	Output: Y = 0
+# At time 135	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 1,	in3 = 0,	in4 = 1,	in5 = 1,	Output: Y = 0
+# At time 140	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 1,	in3 = 1,	in4 = 0,	in5 = 0,	Output: Y = 0
+# At time 145	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 1,	in3 = 1,	in4 = 0,	in5 = 1,	Output: Y = 0
+# At time 150	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 1,	in3 = 1,	in4 = 1,	in5 = 0,	Output: Y = 0
+# At time 155	:	Inputs: EnableN = 0,	in1 = 1,	in2 = 1,	in3 = 1,	in4 = 1,	in5 = 1,	Output: Y = 1
+# At time 160	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 0,	in3 = 0,	in4 = 0,	in5 = 0,	Output: Y = z
+# At time 165	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 0,	in3 = 0,	in4 = 0,	in5 = 1,	Output: Y = z
+# At time 170	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 0,	in3 = 0,	in4 = 1,	in5 = 0,	Output: Y = z
+# At time 175	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 0,	in3 = 0,	in4 = 1,	in5 = 1,	Output: Y = z
+# At time 180	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 0,	in3 = 1,	in4 = 0,	in5 = 0,	Output: Y = z
+# At time 185	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 0,	in3 = 1,	in4 = 0,	in5 = 1,	Output: Y = z
+# At time 190	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 0,	in3 = 1,	in4 = 1,	in5 = 0,	Output: Y = z
+# At time 195	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 0,	in3 = 1,	in4 = 1,	in5 = 1,	Output: Y = z
+# At time 200	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 1,	in3 = 0,	in4 = 0,	in5 = 0,	Output: Y = z
+# At time 205	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 1,	in3 = 0,	in4 = 0,	in5 = 1,	Output: Y = z
+# At time 210	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 1,	in3 = 0,	in4 = 1,	in5 = 0,	Output: Y = z
+# At time 215	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 1,	in3 = 0,	in4 = 1,	in5 = 1,	Output: Y = z
+# At time 220	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 1,	in3 = 1,	in4 = 0,	in5 = 0,	Output: Y = z
+# At time 225	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 1,	in3 = 1,	in4 = 0,	in5 = 1,	Output: Y = z
+# At time 230	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 1,	in3 = 1,	in4 = 1,	in5 = 0,	Output: Y = z
+# At time 235	:	Inputs: EnableN = 1,	in1 = 0,	in2 = 1,	in3 = 1,	in4 = 1,	in5 = 1,	Output: Y = z
+# At time 240	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 0,	in3 = 0,	in4 = 0,	in5 = 0,	Output: Y = z
+# At time 245	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 0,	in3 = 0,	in4 = 0,	in5 = 1,	Output: Y = z
+# At time 250	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 0,	in3 = 0,	in4 = 1,	in5 = 0,	Output: Y = z
+# At time 255	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 0,	in3 = 0,	in4 = 1,	in5 = 1,	Output: Y = z
+# At time 260	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 0,	in3 = 1,	in4 = 0,	in5 = 0,	Output: Y = z
+# At time 265	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 0,	in3 = 1,	in4 = 0,	in5 = 1,	Output: Y = z
+# At time 270	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 0,	in3 = 1,	in4 = 1,	in5 = 0,	Output: Y = z
+# At time 275	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 0,	in3 = 1,	in4 = 1,	in5 = 1,	Output: Y = z
+# At time 280	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 1,	in3 = 0,	in4 = 0,	in5 = 0,	Output: Y = z
+# At time 285	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 1,	in3 = 0,	in4 = 0,	in5 = 1,	Output: Y = z
+# At time 290	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 1,	in3 = 0,	in4 = 1,	in5 = 0,	Output: Y = z
+# At time 295	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 1,	in3 = 0,	in4 = 1,	in5 = 1,	Output: Y = z
+# At time 300	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 1,	in3 = 1,	in4 = 0,	in5 = 0,	Output: Y = z
+# At time 305	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 1,	in3 = 1,	in4 = 0,	in5 = 1,	Output: Y = z
+# At time 310	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 1,	in3 = 1,	in4 = 1,	in5 = 0,	Output: Y = z
+# At time 315	:	Inputs: EnableN = 1,	in1 = 1,	in2 = 1,	in3 = 1,	in4 = 1,	in5 = 1,	Output: Y = z
+# ** Note: $stop    : N:/QuestaSim/tb_hw2_prob2.sv(51)
+#    Time: 320 ns  Iteration: 0  Instance: /tb_hw2_prob2
+# Break at N:/QuestaSim/tb_hw2_prob2.sv line 51
