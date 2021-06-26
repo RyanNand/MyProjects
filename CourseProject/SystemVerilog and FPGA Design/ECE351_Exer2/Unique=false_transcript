@@ -1,0 +1,324 @@
+# Compile of check_results.sv was successful.
+# Compile of definitions_pkg.sv was successful.
+# Compile of leading_ones.sv was successful.
+# Compile of stimulus_generator.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of add_sub.sv was successful.
+# Compile of mult.sv was successful.
+# Compile of num_ones.sv was successful.
+# Compile of top.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim work.tb
+# vsim work.tb 
+# Start time: 08:25:43 on Apr 29,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.definitions_pkg(fast)
+# Loading work.tb(fast)
+# Loading work.stimulus_generator(fast)
+run -all
+# Time scale of (tb) is  1ns /  1ns
+# ...Setting switches to: 0011010100100100
+# TEST CASE(   1): NUM_ONES	Expected: 00110, Got: 00000000_00000110
+# 
+# ...Setting switches to: 0101111010000001
+# TEST CASE(   2): MULT	Expected: 1101000101011110, Got: 11010001_01011110
+# 
+# ...Setting switches to: 1101011000001001
+# TEST CASE(   3): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 0101011001100011
+# TEST CASE(   4): ADD	Expected: 0000000010111001, Got: 00000000_10111001
+# 
+# ...Setting switches to: 0111101100001101
+# TEST CASE(   5): LEADING_ONES	Expected: 01111, Got: 00000000_00001111
+# 
+# ...Setting switches to: 1001100110001101
+# TEST CASE(   6): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 1000010001100101
+# TEST CASE(   7): MULT	Expected: 1100111100010100, Got: 11001111_00010100
+# 
+# ...Setting switches to: 0101001000010010
+# TEST CASE(   8): ADD	Expected: 0000000001100100, Got: 00000000_01100100
+# 
+# ...Setting switches to: 1110001100000001
+# TEST CASE(   9): NUM_ONES	Expected: 00110, Got: 00000000_00000110
+# 
+# ...Setting switches to: 1100110100001101
+# TEST CASE(  10): NUM_ONES	Expected: 01000, Got: 00000000_00001000
+# 
+# ...Setting switches to: 1111000101110110
+# TEST CASE(  11): ADD	Expected: 0000000001100111, Got: 00000000_01100111
+# 
+# ...Setting switches to: 1100110100111101
+# TEST CASE(  12): NUM_ONES	Expected: 01010, Got: 00000000_00001010
+# 
+# ...Setting switches to: 0101011111101101
+# TEST CASE(  13): LEADING_ONES	Expected: 01111, Got: 00000000_00001111
+# 
+# ...Setting switches to: 1111011110001100
+# TEST CASE(  14): MULT	Expected: 0000010000010100, Got: 00000100_00010100
+# 
+# ...Setting switches to: 1110100111111001
+# TEST CASE(  15): NUM_ONES	Expected: 01011, Got: 00000000_00001011
+# 
+# ...Setting switches to: 0010010011000110
+# TEST CASE(  16): LEADING_ONES	Expected: 01110, Got: 00000000_00001110
+# 
+# ...Setting switches to: 1000010011000101
+# TEST CASE(  17): MULT	Expected: 0001110010010100, Got: 00011100_10010100
+# 
+# ...Setting switches to: 1101001010101010
+# TEST CASE(  18): NUM_ONES	Expected: 01000, Got: 00000000_00001000
+# 
+# ...Setting switches to: 1111011111100101
+# TEST CASE(  19): MULT	Expected: 0000000011110011, Got: 00000000_11110011
+# 
+# ...Setting switches to: 0111001001110111
+# TEST CASE(  20): ADD	Expected: 0000000011101001, Got: 00000000_11101001
+# 
+# ...Setting switches to: 1101011000010010
+# TEST CASE(  21): ADD	Expected: 1111111111101000, Got: 11111111_11101000
+# 
+# ...Setting switches to: 1101101110001111
+# TEST CASE(  22): SUB	Expected: 0000000001001100, Got: 00000000_01001100
+# 
+# ...Setting switches to: 0110100111110010
+# TEST CASE(  23): LEADING_ONES	Expected: 01111, Got: 00000000_00001111
+# 
+# ...Setting switches to: 1001011011001110
+# TEST CASE(  24): SUB	Expected: 1111111111001000, Got: 11111111_11001000
+# 
+# ...Setting switches to: 0111101011101000
+# TEST CASE(  25): SUB	Expected: 0000000010010010, Got: 00000000_10010010
+# 
+# ...Setting switches to: 0100111011000101
+# TEST CASE(  26): LEADING_ONES	Expected: 01111, Got: 00000000_00001111
+# 
+# ...Setting switches to: 0100100101011100
+# TEST CASE(  27): MULT	Expected: 0001101000111100, Got: 00011010_00111100
+# 
+# ...Setting switches to: 0010100010111101
+# TEST CASE(  28): LEADING_ONES	Expected: 01110, Got: 00000000_00001110
+# 
+# ...Setting switches to: 0101100000101101
+# TEST CASE(  29): SUB	Expected: 0000000000101011, Got: 00000000_00101011
+# 
+# ...Setting switches to: 0010011001100101
+# TEST CASE(  30): SUB	Expected: 1111111111000001, Got: 11111111_11000001
+# 
+# ...Setting switches to: 0110001001100011
+# TEST CASE(  31): NUM_ONES	Expected: 00111, Got: 00000000_00000111
+# 
+# ...Setting switches to: 1000011100001010
+# TEST CASE(  32): SUB	Expected: 1111111101111101, Got: 11111111_01111101
+# 
+# ...Setting switches to: 0010001010000000
+# TEST CASE(  33): NUM_ONES	Expected: 00011, Got: 00000000_00000011
+# 
+# ...Setting switches to: 0010000100100000
+# TEST CASE(  34): ADD	Expected: 0000000001000001, Got: 00000000_01000001
+# 
+# ...Setting switches to: 0100010110101010
+# TEST CASE(  35): NUM_ONES	Expected: 00111, Got: 00000000_00000111
+# 
+# ...Setting switches to: 1100110010011101
+# TEST CASE(  36): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 0011111010010110
+# TEST CASE(  37): SUB	Expected: 0000000010101000, Got: 00000000_10101000
+# 
+# ...Setting switches to: 1011100000010011
+# TEST CASE(  38): ADD	Expected: 1111111111001011, Got: 11111111_11001011
+# 
+# ...Setting switches to: 0011100000001101
+# TEST CASE(  39): NUM_ONES	Expected: 00110, Got: 00000000_00000110
+# 
+# ...Setting switches to: 1101011001010011
+# TEST CASE(  40): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 1101110101101011
+# TEST CASE(  41): ADD	Expected: 0000000001001000, Got: 00000000_01001000
+# 
+# ...Setting switches to: 0010101011010101
+# TEST CASE(  42): LEADING_ONES	Expected: 01110, Got: 00000000_00001110
+# 
+# ...Setting switches to: 0100101000000010
+# TEST CASE(  43): LEADING_ONES	Expected: 01111, Got: 00000000_00001111
+# 
+# ...Setting switches to: 0011111010101110
+# TEST CASE(  44): NUM_ONES	Expected: 01010, Got: 00000000_00001010
+# 
+# ...Setting switches to: 1110100100011101
+# TEST CASE(  45): MULT	Expected: 1111110101100101, Got: 11111101_01100101
+# 
+# ...Setting switches to: 0111001011001111
+# TEST CASE(  46): MULT	Expected: 1110101000101110, Got: 11101010_00101110
+# 
+# ...Setting switches to: 0100100100100011
+# TEST CASE(  47): NUM_ONES	Expected: 00110, Got: 00000000_00000110
+# 
+# ...Setting switches to: 0110010100001010
+# TEST CASE(  48): LEADING_ONES	Expected: 01111, Got: 00000000_00001111
+# 
+# ...Setting switches to: 0000101011001010
+# TEST CASE(  49): ADD	Expected: 1111111111010100, Got: 11111111_11010100
+# 
+# ...Setting switches to: 0100110000111100
+# TEST CASE(  50): ADD	Expected: 0000000010001000, Got: 00000000_10001000
+# 
+# ...Setting switches to: 1011110111110010
+# TEST CASE(  51): NUM_ONES	Expected: 01011, Got: 00000000_00001011
+# 
+# ...Setting switches to: 0110000110001010
+# TEST CASE(  52): ADD	Expected: 1111111111101011, Got: 11111111_11101011
+# 
+# ...Setting switches to: 1011001101000001
+# TEST CASE(  53): SUB	Expected: 1111111101110010, Got: 11111111_01110010
+# 
+# ...Setting switches to: 0011010011011000
+# TEST CASE(  54): LEADING_ONES	Expected: 01110, Got: 00000000_00001110
+# 
+# ...Setting switches to: 1111001101111000
+# TEST CASE(  55): SUB	Expected: 1111111101111011, Got: 11111111_01111011
+# 
+# ...Setting switches to: 0001001010001001
+# TEST CASE(  56): ADD	Expected: 1111111110011011, Got: 11111111_10011011
+# 
+# ...Setting switches to: 0000110111101011
+# TEST CASE(  57): SUB	Expected: 0000000000100010, Got: 00000000_00100010
+# 
+# ...Setting switches to: 0110010110110110
+# TEST CASE(  58): NUM_ONES	Expected: 01001, Got: 00000000_00001001
+# 
+# ...Setting switches to: 1111100111000110
+# TEST CASE(  59): MULT	Expected: 0000000110010110, Got: 00000001_10010110
+# 
+# ...Setting switches to: 0001001110101110
+# TEST CASE(  60): MULT	Expected: 1111100111101010, Got: 11111001_11101010
+# 
+# ...Setting switches to: 0000001010111100
+# TEST CASE(  61): LEADING_ONES	Expected: 01010, Got: 00000000_00001010
+# 
+# ...Setting switches to: 1101110100101010
+# TEST CASE(  62): SUB	Expected: 1111111110110011, Got: 11111111_10110011
+# 
+# ...Setting switches to: 1001101000001011
+# TEST CASE(  63): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 1011111001110001
+# TEST CASE(  64): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 0100000110000101
+# TEST CASE(  65): ADD	Expected: 1111111111000110, Got: 11111111_11000110
+# 
+# ...Setting switches to: 0101010101001111
+# TEST CASE(  66): NUM_ONES	Expected: 01001, Got: 00000000_00001001
+# 
+# ...Setting switches to: 0110000000111011
+# TEST CASE(  67): MULT	Expected: 0001011000100000, Got: 00010110_00100000
+# 
+# ...Setting switches to: 0011001100111010
+# TEST CASE(  68): ADD	Expected: 0000000001101101, Got: 00000000_01101101
+# 
+# ...Setting switches to: 0011001001111110
+# TEST CASE(  69): LEADING_ONES	Expected: 01110, Got: 00000000_00001110
+# 
+# ...Setting switches to: 0100101100010101
+# TEST CASE(  70): NUM_ONES	Expected: 00111, Got: 00000000_00000111
+# 
+# ...Setting switches to: 1001101111110001
+# TEST CASE(  71): SUB	Expected: 1111111110101010, Got: 11111111_10101010
+# 
+# ...Setting switches to: 0100101111011001
+# TEST CASE(  72): ADD	Expected: 0000000000100100, Got: 00000000_00100100
+# 
+# ...Setting switches to: 0000011101100010
+# TEST CASE(  73): NUM_ONES	Expected: 00110, Got: 00000000_00000110
+# 
+# ...Setting switches to: 1111101101001100
+# TEST CASE(  74): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 0101010110011111
+# TEST CASE(  75): LEADING_ONES	Expected: 01111, Got: 00000000_00001111
+# 
+# ...Setting switches to: 1010000110001111
+# TEST CASE(  76): SUB	Expected: 0000000000010010, Got: 00000000_00010010
+# 
+# ...Setting switches to: 1010100111111000
+# TEST CASE(  77): NUM_ONES	Expected: 01001, Got: 00000000_00001001
+# 
+# ...Setting switches to: 0110000010110111
+# TEST CASE(  78): MULT	Expected: 1110010010100000, Got: 11100100_10100000
+# 
+# ...Setting switches to: 0101011010011111
+# TEST CASE(  79): ADD	Expected: 1111111111110101, Got: 11111111_11110101
+# 
+# ...Setting switches to: 1001010001011100
+# TEST CASE(  80): SUB	Expected: 1111111100111000, Got: 11111111_00111000
+# 
+# ...Setting switches to: 1100000001011011
+# TEST CASE(  81): NUM_ONES	Expected: 00111, Got: 00000000_00000111
+# 
+# ...Setting switches to: 0011011110001001
+# TEST CASE(  82): ADD	Expected: 1111111111000000, Got: 11111111_11000000
+# 
+# ...Setting switches to: 0011001001001001
+# TEST CASE(  83): LEADING_ONES	Expected: 01110, Got: 00000000_00001110
+# 
+# ...Setting switches to: 0011111011010000
+# TEST CASE(  84): ADD	Expected: 0000000000001110, Got: 00000000_00001110
+# 
+# ...Setting switches to: 1100000011010111
+# TEST CASE(  85): ADD	Expected: 1111111110010111, Got: 11111111_10010111
+# 
+# ...Setting switches to: 1111110001010001
+# TEST CASE(  86): NUM_ONES	Expected: 01001, Got: 00000000_00001001
+# 
+# ...Setting switches to: 0010111110010110
+# TEST CASE(  87): MULT	Expected: 1110110010001010, Got: 11101100_10001010
+# 
+# ...Setting switches to: 0111111100001100
+# TEST CASE(  88): SUB	Expected: 0000000001110011, Got: 00000000_01110011
+# 
+# ...Setting switches to: 1100111011000010
+# TEST CASE(  89): SUB	Expected: 0000000000001100, Got: 00000000_00001100
+# 
+# ...Setting switches to: 1110110111001000
+# TEST CASE(  90): MULT	Expected: 0000010000101000, Got: 00000100_00101000
+# 
+# ...Setting switches to: 0101101001110111
+# TEST CASE(  91): NUM_ONES	Expected: 01010, Got: 00000000_00001010
+# 
+# ...Setting switches to: 1110110100111101
+# TEST CASE(  92): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 1101101100010010
+# TEST CASE(  93): SUB	Expected: 1111111111001001, Got: 11111111_11001001
+# 
+# ...Setting switches to: 0000000001111110
+# TEST CASE(  94): ADD	Expected: 0000000001111110, Got: 00000000_01111110
+# 
+# ...Setting switches to: 1000000101101101
+# TEST CASE(  95): ADD	Expected: 1111111111101110, Got: 11111111_11101110
+# 
+# ...Setting switches to: 1110011100111001
+# TEST CASE(  96): NUM_ONES	Expected: 01010, Got: 00000000_00001010
+# 
+# ...Setting switches to: 1000111100011111
+# TEST CASE(  97): NUM_ONES	Expected: 01010, Got: 00000000_00001010
+# 
+# ...Setting switches to: 1111011011010011
+# TEST CASE(  98): LEADING_ONES	Expected: 10000, Got: 00000000_00010000
+# 
+# ...Setting switches to: 0010111110000101
+# TEST CASE(  99): LEADING_ONES	Expected: 01110, Got: 00000000_00001110
+# 
+# ...Setting switches to: 1000100001111000
+# TEST CASE( 100): ADD	Expected: 0000000000000000, Got: 00000000_00000000
+# 
+# SUCCESS: Exercise #2 test PASSED   100 TESTS!
+# ** Note: $stop    : //thoth.cecs.pdx.edu/Home05/nand/Downloads/ece351sp21_exercise2/hdl/provided_tiles/stimulus_generator.sv(75)
+#    Time: 5100 ns  Iteration: 0  Instance: /tb/GEN
+# Break at //thoth.cecs.pdx.edu/Home05/nand/Downloads/ece351sp21_exercise2/hdl/provided_tiles/stimulus_generator.sv line 75

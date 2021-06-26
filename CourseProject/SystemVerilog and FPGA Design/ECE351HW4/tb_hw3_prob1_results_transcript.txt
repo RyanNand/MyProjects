@@ -1,0 +1,37 @@
+# Compile of uart_tx.txt was successful.
+# Compile of uart_rx.txt was successful.
+# Compile of baud_gen.txt was successful.
+# Compile of tb_uart_loopback.txt was successful.
+# Compile of fsm.sv was successful.
+# Compile of tb_imp_fsm.sv was successful.
+# Compile of hw3_prob1.sv was successful.
+# Compile of tb_hw3_prob1.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_hw3_prob1
+# vsim -voptargs="+acc" work.tb_hw3_prob1 
+# Start time: 14:33:17 on May 30,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.tb_hw3_prob1(fast)
+# Loading work.hw3_prob1(fast)
+run -all
+# 
+# 4-Bit SIPO Shift Register Test - Ryan Nand (nand@pdx.edu)
+# Sources: N:/QuestaSim2
+# 
+# 
+# Past 1st test! Expected result: 4'b1111		Register output: 4'b1111
+# Past 2nd test! Expected result: 4'b0000		Register output: 4'b0000
+# Past 3rd test! Expected result: 4'b0000		Register output: 4'b0000
+# Past 4th test! Expected result: 4'b1100		Register output: 4'b1100
+# Past 5th test! Expected result: 4'b0011		Register output: 4'b0011
+# Past 6th test! Expected result: 4'b0101		Register output: 4'b0101
+# Past 7th test! Expected result: 4'b1010		Register output: 4'b1010
+# 
+# **All 7 tests have been passed!**
+# 
+# End 4-Bit SIPO Shift Register Test - Ryan Nand (nand@pdx.edu)
+# 
+# ** Note: $stop    : N:/QuestaSim2/tb_hw3_prob1.sv(107)
+#    Time: 3015 ns  Iteration: 0  Instance: /tb_hw3_prob1
+# Break in NamedBeginStat stimulus at N:/QuestaSim2/tb_hw3_prob1.sv line 107

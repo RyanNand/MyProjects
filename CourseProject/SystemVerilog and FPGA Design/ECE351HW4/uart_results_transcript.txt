@@ -1,0 +1,42 @@
+# Compile of uart_tx.txt was successful.
+# Compile of uart_rx.txt was successful.
+# Compile of baud_gen.txt was successful.
+# Compile of tb_uart_loopback.txt was successful.
+# Compile of fsm.sv was successful.
+# Compile of tb_imp_fsm.sv was successful.
+# Compile of hw3_prob1.sv was successful.
+# Compile of tb_hw3_prob1.sv was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb_uart_loopback
+# vsim -voptargs="+acc" work.tb_uart_loopback 
+# Start time: 14:36:07 on May 30,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "uart_tx(fast)".
+# Loading sv_std.std
+# Loading work.tb_uart_loopback(fast)
+# Loading work.baud_gen(fast)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+run -all
+# 
+# UART Loopback Test - Ryan Nand (nand@pdx.edu)
+# Sources: N:/QuestaSim2
+# 
+# ** Warning: (vsim-8315) No condition is true in the unique/priority if/case statement.
+#    Time: 0 ns  Iteration: 2  Process: /tb_uart_loopback/RCVR/uart_rcvr_comb_block/#implicit#unique__93 File: N:/QuestaSim2/work/uart_rx.txt Line: 93
+# System Reset
+# baud rate divisor set to   20
+# MATCH: received data: 01110010, expected data: 01110010
+# MATCH: received data: 10110010, expected data: 10110010
+# MATCH: received data: 00010000, expected data: 00010000
+# MATCH: received data: 01010101, expected data: 01010101
+# MATCH: received data: 00000000, expected data: 00000000
+# MATCH: received data: 10101010, expected data: 10101010
+# MATCH: received data: 11111111, expected data: 11111111
+# All tests passed
+# End UART Loopback test - Ryan Nand (nand@pdx.edu)
+# 
+# ** Note: $stop    : N:/QuestaSim2/work/tb_uart_loopback.txt(204)
+#    Time: 447410 ns  Iteration: 1  Instance: /tb_uart_loopback
+# Break in NamedBeginStat stimulus at N:/QuestaSim2/work/tb_uart_loopback.txt line 204

@@ -1,0 +1,12 @@
+vsim -voptargs=+acc work.tb_CLA8BIT
+# vsim -voptargs="+acc" work.tb_CLA8BIT 
+# Start time: 15:31:34 on Apr 26,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading sv_std.std
+# Loading work.tb_CLA8BIT(fast)
+# Loading work.stimulus(fast)
+# Loading work.dutcla_8b(fast)
+# Loading work.dutcla_4b(fast)
+# Loading work.cla_sb(fast)
+run -all
+# ***Congratulations, No errors found after      131072 tests***
