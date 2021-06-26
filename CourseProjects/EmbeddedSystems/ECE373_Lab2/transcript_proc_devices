@@ -1,0 +1,49 @@
+Script started on 2021-04-21 17:10:55-07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="39"]
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-2-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-2-RyanNand[00m$ i[Ksudo insmod homework2.ko
+[sudo] password for ryan: 
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-2-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-2-RyanNand[00m$ dmesg | tail -3
+[24551.821317] homework2 module unloaded!
+[24581.658371] homework2 module loading... exam=42
+[24581.658375] Allocated 5 devices at major: 238
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-2-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-2-RyanNand[00m$ cat /proc//d[K[Kdevices | less
+[?1049h[22;0;0t[?1h=Character devices:
+  1 mem
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  5 ttyprintk
+  6 lp
+  7 vcs
+ 10 misc
+ 13 input
+ 21 sg
+ 29 fb
+ 89 i2c
+ 99 ppdev
+108 ppp
+116 alsa
+128 ptm
+136 pts
+180 usb
+189 usb_device
+204 ttyMAX
+226 drm
+238 homework2
+239 aux
+240 cec
+241 BaseRemoteCtl
+242 hidraw
+243 vfio
+244 bsg
+245 watchdog
+246 ptp
+247 pps
+248 rtc
+249 dma_heap
+250 dax
+:[K[K[?1l>[?1049l[23;0;0t]0;ryan@ryan-ece373: ~/github/ece373-assignment-2-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-2-RyanNand[00m$ exit
+
+Script done on 2021-04-21 17:11:53-07:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,10 @@
+# PSDX-License-Identifier: GPL-2.0-only
+#
+# Ryan's device configuration
+#
+
+config VENDOR_RYAN
+	tristate "Ryan's device"
+	depends on PCI
+	help 
+	  This driver takes and gives stuff to userspace. Use userspace function          calls "read" and "write" to manipulate variable in driver. Can then             print with userspace variable.

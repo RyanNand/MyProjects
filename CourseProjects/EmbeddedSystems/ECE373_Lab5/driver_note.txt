@@ -1,0 +1,1 @@
+The reason why we don't have to uninstall the driver is because we are using the e1000 driver already installed. In addition, we are not replacing the driver with our own like done previously.

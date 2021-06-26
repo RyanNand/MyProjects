@@ -1,0 +1,45 @@
+Script started on 2021-05-15 22:19:07-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+]0;ryan@ryan-ece373: ~[01;32mryan@ryan-ece373[00m:[01;34m~[00m$ cd ..
+]0;ryan@ryan-ece373: /home[01;32mryan@ryan-ece373[00m:[01;34m/home[00m$ cd ..
+]0;ryan@ryan-ece373: /[01;32mryan@ryan-ece373[00m:[01;34m/[00m$ cd sys/module/e1000/drivers/pci\:e1000
+]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ ls -l
+total 0
+lrwxrwxrwx 1 root root    0 May 15 22:19 [0m[01;36m0000:00:03.0[0m -> [01;34m../../../../devices/pci0000:00/0000:00:03.0[0m
+--w------- 1 root root 4096 May 15 22:18 bind
+lrwxrwxrwx 1 root root    0 May 15 21:49 [01;36mmodule[0m -> [01;34m../../../../module/e1000[0m
+--w------- 1 root root 4096 May 15 21:49 new_id
+--w------- 1 root root 4096 May 15 21:49 remove_id
+--w------- 1 root root 4096 May 15 21:49 uevent
+--w------- 1 root root 4096 May 15 21:49 unbind
+]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ ls -lcd sys/module/e1000/drivers/pci\:e1000[A]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ [C[C[C..[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pexitsudo ./ledmon -s 00:03.0 -L[A]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ clear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ./ledmon -s 00:03.0 -L[A]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ [6Pledmon -s 00:03.0 -L
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs[Kedmon -s 00:03.0 -Lsudo ./ledmon -s 00:03.0 -L[A]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ clear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo ./ledmon -s 00:03.0 -L[A]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..sys/module/e1000/drivers/pci\:e1000[A]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ ls -l[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo bash
+[sudo] password for ryan: 
+]0;root@ryan-ece373: /sys/bus/pci/drivers/e1000root@ryan-ece373:/sys/bus/pci/drivers/e1000# exitcho "0000:00:03.0" > bindls -l[Kclear[Kls -lecho "0000:00:03.0" > unbindls -l[Kecho "0000:00:03.0" > bindls -l[Kecho "0000:00:03.0" > unbind
+]0;root@ryan-ece373: /sys/bus/pci/drivers/e1000root@ryan-ece373:/sys/bus/pci/drivers/e1000# ls -l
+total 0
+--w------- 1 root root 4096 May 15 22:18 bind
+lrwxrwxrwx 1 root root    0 May 15 21:49 [0m[01;36mmodule[0m -> [01;34m../../../../module/e1000[0m
+--w------- 1 root root 4096 May 15 21:49 new_id
+--w------- 1 root root 4096 May 15 21:49 remove_id
+--w------- 1 root root 4096 May 15 21:49 uevent
+--w------- 1 root root 4096 May 15 22:19 unbind
+]0;root@ryan-ece373: /sys/bus/pci/drivers/e1000root@ryan-ece373:/sys/bus/pci/drivers/e1000# ls -lecho "0000:00:03.0" > unbind[1Pbind[1Pbind
+]0;root@ryan-ece373: /sys/bus/pci/drivers/e1000root@ryan-ece373:/sys/bus/pci/drivers/e1000# e[Kecho "0000:00:03.0" > bindls -l[K
+total 0
+lrwxrwxrwx 1 root root    0 May 15 22:20 [0m[01;36m0000:00:03.0[0m -> [01;34m../../../../devices/pci0000:00/0000:00:03.0[0m
+--w------- 1 root root 4096 May 15 22:19 bind
+lrwxrwxrwx 1 root root    0 May 15 21:49 [01;36mmodule[0m -> [01;34m../../../../module/e1000[0m
+--w------- 1 root root 4096 May 15 21:49 new_id
+--w------- 1 root root 4096 May 15 21:49 remove_id
+--w------- 1 root root 4096 May 15 21:49 uevent
+--w------- 1 root root 4096 May 15 22:19 unbind
+]0;root@ryan-ece373: /sys/bus/pci/drivers/e1000root@ryan-ece373:/sys/bus/pci/drivers/e1000# exit
+exit
+]0;ryan@ryan-ece373: /sys/module/e1000/drivers/pci:e1000[01;32mryan@ryan-ece373[00m:[01;34m/sys/module/e1000/drivers/pci:e1000[00m$ e[Kexit
+
+Script done on 2021-05-15 22:20:16-07:00 [COMMAND_EXIT_CODE="0"]

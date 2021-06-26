@@ -1,0 +1,20 @@
+Script started on 2021-06-02 15:34:45-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="39"]
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-5-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-5-RyanNand[00m$ sudo ./homework5
+[sudo] password for ryan: 
+Initial LED control register value: 706830f
+LED control register after run through: 706830f
+The contents of the Good Packets Received: 0
+
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-5-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-5-RyanNand[00m$ sudo ./homework5 
+Initial LED control register value: 706830f
+LED control register after run through: 706830f
+The contents of the Good Packets Received: 15
+
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-5-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-5-RyanNand[00m$ sudo ./homework5 
+Initial LED control register value: 706830f
+LED control register after run through: 706830f
+The contents of the Good Packets Received: 10e
+
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-5-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-5-RyanNand[00m$ exit
+
+Script done on 2021-06-02 15:35:51-07:00 [COMMAND_EXIT_CODE="0"]

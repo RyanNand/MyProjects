@@ -1,0 +1,31 @@
+step 1: compile the file homework2.c by running the "make" command 
+
+
+step 2: insert module by running "sudo insmod homework2.ko" command
+
+
+step 3: Use the "dmesg | tail -10" command to see messages that were printed into the kernel. The last message should tell you the dynamically-allocated major number.
+
+
+step 4: Use "cat proc/devices | less" command to confirm major number
+
+
+step 5: Make special file by using the "sudo mknod /dev/homework2 c 'dynamically-allocated major number(found in step 3)' 'desired first minor number(usually zero)'" command. The c is for character device (b for block device). Also, the file name can be anything (in this case it is homework2).
+
+
+step 6: Use "ls -l /dev/homework2" to confirm special file was created.
+
+
+step 7(optional): You can read the special file by using "cat /dev/homework2".
+
+
+step 8: You can again see printed messages within the kernel using "dmesg".
+
+
+step 9: Use "gcc -g -o cprogram cprogram.c" to compile userspace program.
+
+
+step 10: Use "sudo ./cprogram" to run userspace program
+
+
+step 11(optional): To remove inserted module use the "sudo rmmod homework2" command.  

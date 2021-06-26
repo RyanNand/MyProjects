@@ -1,0 +1,17 @@
+Referenced: User manual AIMB-212 by Advantech
+
+1a. The audio device is Realtek ALC888 according to the block diagram.
+1b. The 8-bit GPIO is connected to the Super IO Winbond W83627DHG according to the block diagram.
+1c. There are two LAN devices on the motherboard. They are the Intel 82567V (LAN1) and the Intel 82583V (LAN 2).
+1d. The box supports six serial ports inside and out.
+
+Referenced: Intel® 82583V GbE Controller 
+
+2a. Pins 30 (LED1), 31 (LED0), and 33 (LED2) control the LEDs.
+2b. The device control register offset is 0x00000 / 0x00004
+2c. Bit 26 of the device control register is the network reset (write one to reset, self-clearing)
+
+3a. The register that controls the LEDs is called LED Control (LEDCTL) register (offset 0x00E00).
+3b. To turn off LED1, bits 11:8 (LED1_MODE) of the LED Control register are to be all set (0b1111). 
+3c. If the source needs to be changed then bits 19:16 needs to be updated. Otherwise, just bit 23 (LED2_BLINK) of LEDCTL needs to be set/enabled for blinking to occur.
+
