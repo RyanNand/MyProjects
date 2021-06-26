@@ -1,0 +1,23 @@
+Script started on 2021-05-18 19:08:52-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="83" LINES="39"]
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo insmod homework4.ko
+[sudo] password for ryan: 
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo ./cprogram 
+
+fd = 3
+/dev/Ryans_module opened with read/write access
+Read the following: 2
+Writing the following: 4
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo rmmod homework4 
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo insmod homework4.ko blink_rate [K=6
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo ./cprogram 
+
+fd = 3
+/dev/Ryans_module opened with read/write access
+Read the following: 6
+Writing the following: 4
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo rmmod  homework4 [K[K[K[K[K[K[K[K[K[K[Khomework4 
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo insmod homework4.ko
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo rmmod homework4 
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ exit
+
+Script done on 2021-05-18 19:10:25-07:00 [COMMAND_EXIT_CODE="0"]
