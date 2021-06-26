@@ -1,7 +1,0 @@
-Script started on 2021-06-07 16:37:15-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="39"]
-]0;ryan@ryan-ece373: ~/github/ece373-assignment-7-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-7-RyanNand[00m$ /lib[K[K[K[Kcd /lib/modules5[K/5.12.9RyanNand/kernel/drivers/misc/ece/
-]0;ryan@ryan-ece373: /lib/modules/5.12.9RyanNand/kernel/drivers/misc/ece[01;32mryan@ryan-ece373[00m:[01;34m/lib/modules/5.12.9RyanNand/kernel/drivers/misc/ece[00m$ ls
-homework2.ko
-]0;ryan@ryan-ece373: /lib/modules/5.12.9RyanNand/kernel/drivers/misc/ece[01;32mryan@ryan-ece373[00m:[01;34m/lib/modules/5.12.9RyanNand/kernel/drivers/misc/ece[00m$ exit
-
-Script done on 2021-06-07 16:37:53-07:00 [COMMAND_EXIT_CODE="0"]
