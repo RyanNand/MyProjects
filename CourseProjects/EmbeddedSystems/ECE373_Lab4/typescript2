@@ -1,0 +1,24 @@
+Script started on 2021-05-18 19:20:35-07:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="83" LINES="39"]
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo insmod homework4.ko
+[sudo] password for ryan: 
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo ./cprogram 
+
+fd = 3
+/dev/Ryans_module opened with read/write access
+Read the following: 2
+Writing the following: 4
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ dmesg | tail -10
+[ 1138.752039] Ryans module unloaded!
+[ 1188.137532] Ryan's module loading... blink_rate=2
+[ 1188.137535] Allocated 5 devices at major: 238
+[ 1188.137613] Device file was created: /dev/Ryans_module with major: 238 and minor: 0
+[ 1191.294175] successfully opened!
+[ 1191.294177] Timer has started, HZ = 250, blink_rate = 2, syscall_val = 2
+[ 1191.294243] User got from us 0x2
+[ 1191.294247] syscall_val changed to 4
+[ 1191.294248] The blink rate is now: 4
+[ 1191.294248] Userspace wrote "0x4" to us
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ sudo rmmod homework4 
+]0;ryan@ryan-ece373: ~/github/ece373-assignment-4-RyanNand[01;32mryan@ryan-ece373[00m:[01;34m~/github/ece373-assignment-4-RyanNand[00m$ exit
+
+Script done on 2021-05-18 19:21:04-07:00 [COMMAND_EXIT_CODE="0"]
