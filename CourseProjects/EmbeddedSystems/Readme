@@ -1,4 +1,4 @@
 This folder contains projects and labwork that are related to embedded systems (microprocessors, microcontrollers, embedded OS, drivers, etc.):
-ECE 371 - Microprocessors
-ECE 372 - Microprocessor Interfacing and Embedded Systems
-ECE 373 - Embedded Operating Systems and Device Drivers
+ECE 371 - Microprocessors (Assembly code)
+ECE 372 - Microprocessor Interfacing and Embedded Systems (Assembly code and C code)
+ECE 373 - Embedded Operating Systems and Device Drivers (C code)
