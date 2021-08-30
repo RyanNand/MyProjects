@@ -75,14 +75,14 @@ end
 
 // FSM output decoder
 always_comb begin
-  {CLRT1, CLRT2, SOAP, SPRAY} = '0;             // Pre-case assignment (avoid unintential latches)
+  {CLRT1, CLRT2, SOAP, SPRAY} = '0;             // Pre-case assignment (avoid unintentional latches)
   case(state)                                   // Case statement dependent on current FSM state
     S0: {CLRT1, CLRT2, SOAP, SPRAY} = '0;       // State S0 has all outputs to zero
     S1: {CLRT1, CLRT2, SOAP, SPRAY} = 4'b1000;  // State S1 assert clear timer 1 output
     S2: {CLRT1, CLRT2, SOAP, SPRAY} = 4'b0101;  // State S2 assert clear timer 2 and spray output
     S3: {CLRT1, CLRT2, SOAP, SPRAY} = 4'b1010;  // State S3 assert clear timer 1 and soap output
     S4: {CLRT1, CLRT2, SOAP, SPRAY} = 4'b0001;  // State S4 assert spray output
-    default: {CLRT1, CLRT2, SOAP, SPRAY} = '0;  // Default outputs to zero (avoid unintential latches)
+    default: {CLRT1, CLRT2, SOAP, SPRAY} = '0;  // Default outputs to zero (avoid unintentional latches)
   endcase
 end
 endmodule : carwash_fsm
