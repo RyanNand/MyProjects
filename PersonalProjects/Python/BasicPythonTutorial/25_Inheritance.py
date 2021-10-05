@@ -2,8 +2,8 @@
 from Inherit import FavIndianFood
 
 # A class object for a class that utilizes inheritance
-# Inherited class "FavFood"
-# Inheritor class "FavIndianFood"
+# Parent class "FavFood"       # Created in "Inherit2"
+# Child class "FavIndianFood"  # Created in "Inherit"
 IndianFood = FavIndianFood()
 
 IndianFood.dish()     # A function that is not inherited
