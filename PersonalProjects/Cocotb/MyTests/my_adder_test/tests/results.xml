@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1633075994" />
+    <testcase name="all_possible_comb" classname="test_cla" file="/home/ryan/my_test/tests/test_cla.py" lineno="25" time="29.842476844787598" sim_time_ns="131073.0" ratio_time="4392.162241817864" />
+  </testsuite>
+</testsuites>

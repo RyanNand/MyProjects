@@ -1,0 +1,7 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1632916440" />
+    <testcase name="adder_basic_test" classname="test_adder" file="/home/ryan/Test/tests/test_adder.py" lineno="17" time="0.0009794235229492188" sim_time_ns="2.001" ratio_time="2043.038535540409" />
+    <testcase name="adder_randomised_test" classname="test_adder" file="/home/ryan/Test/tests/test_adder.py" lineno="36" time="0.001957416534423828" sim_time_ns="20.000999999999998" ratio_time="10218.060207551765" />
+  </testsuite>
+</testsuites>
