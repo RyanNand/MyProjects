@@ -1,0 +1,4 @@
+This folder contains code examples that contributed to my studies of Cocotb.
+This code was gathered from Cocotb's git.
+My studies involved studying each line of code; the purpose and concept. This is reflected in the comments.
+This will be a good reference for future Cocotb tests; in combination with my own practice code which should be contained in a separate folder one directory back.
